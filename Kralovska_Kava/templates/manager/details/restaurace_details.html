@@ -1,0 +1,70 @@
+{% extends "manager/base.html" %}
+{% load static i18n %}
+{% load custom_filters %}
+{% block manage_content %}
+<div class="manage_restaurace_detail"> 
+    <h1 class="manage_restaurace_detail_title">{{ page_title }}</h1>
+    <section class="manage_restaurace_detail_content">
+        <form class="manage-back-button" method="post" action="{% url 'manager:back_details' %}">
+            {% csrf_token %}
+            <input type="hidden" name="return_url" value="{{ request.path }}">
+            <button type="submit" class="button">{% trans 'Back' %}</button>
+        </form>
+        <form class="form_control_restaurace_text" method="POST" action="{% if restaurant.id %}{% url 'manager:update_restaurant' restaurant.id%}{% else %}{% url 'manager:create_restaurant' %}{% endif %}">
+            {% csrf_token %}
+            <input type="hidden" name="restaurant_id" value="{{ restaurant.id }}"> 
+            <label for="name_restaurant">{% trans "restaurant_restaurant_name" %}</label>
+            <input 
+            type="text" 
+            id="name_reataurant" 
+            name="name_reataurant" 
+            class="input-control-restaurant-text"
+            required
+            value="{% if restaurant.id %}{{ restaurant.name }}{% endif %}">
+        
+            <label for="tables_restaurant">{% trans "restaurant_tables_quantity" %}</label>
+            <input 
+            type="number" 
+            id="tables_reataurant" 
+            name="tables_reataurant" 
+            class="input-control-restaurant-text"
+            required
+            value="{% if restaurant.id %}{{ restaurant.tables }}{% endif %}">
+
+            <label for="open_restaurant">{% trans "restaurant_open" %}</label>
+            <input 
+            type="time" 
+            id="open_restaurant" 
+            name="open_restaurant" 
+            class="input-control-restaurant-text"
+            required
+            value="{% if restaurant.id %}{{ restaurant.opening_time|time:"H:i" }}{% endif %}">
+
+            <label for="close_restaurant">{% trans "restaurant_close" %}</label>
+            <input 
+            type="time" 
+            id="close_restaurant" 
+            name="close_restaurant" 
+            class="input-control-restaurant-text"
+            required
+            value="{% if restaurant.id %}{{ restaurant.closing_time|time:"H:i" }}{% endif %}">
+            
+            {% if restaurant.id %}
+            <section class="restaurant_self_details">   
+                <p class="restaurant_self">{% trans "restaurant_reservation_count" %}: {{ reservation_count }}</p>
+                <p class="restaurant_self">{% trans "restaurant_creator" %}: {{ restaurant.creator }}</p>
+                <p class="restaurant_self">{% trans "restaurant_date_create" %}: {{ restaurant.date_created }}</p>
+            </section>
+            {% endif %}
+            <section class="is_active">
+                <label for="is_active">{% trans "restaurant_restaurant_active" %}:</label>
+                <input type="checkbox" id="is_active" name="is_active" {% if restaurant.is_active %}checked{% endif %}>
+            </section>
+            <input type="hidden" name="return_url" value="{{ request.path }}">
+        
+            <button type="submit" class="submit-btn-restaurant" disabled>{% trans 'Save' %}</button>
+        </form>
+    </section>
+</div>
+{% endblock manage_content %}
+

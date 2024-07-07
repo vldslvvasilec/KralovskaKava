@@ -1,0 +1,40 @@
+{% extends "manager/base.html" %}
+{% load static i18n %}
+{% load custom_filters %}
+{% block manage_content %}
+<div class="manage_categor_detail">
+    <h1 class="manage_categor_detail_title">{{ page_title }}</h1>
+    <section class="manage_categor_detail_content">
+        <form method="post" class="manage-back-button" action="{% url 'manager:back_details' %}">
+            {% csrf_token %}
+            <input type="hidden" name="return_url" value="{{ request.path }}">
+            <button type="submit" class="button">{% trans 'Back' %}</button>
+        </form>
+        <form class="form_control_text" method="POST" action="{% if category.id %}{% url 'manager:update_category' category.id%}{% else %}{% url 'manager:create_category' %}{% endif %}">
+            {% csrf_token %}
+            <input type="hidden" name="category_id" value="{{ category.id }}"> 
+            {% for lang_code, lang_name in languages %}
+            <label for="name_{{ lang_code }}">{% trans "category_category_name" %}: ({{ lang_name }}):</label>
+            <input 
+            type="text" 
+            id="name_{{ lang_code }}" 
+            name="name_{{ lang_code }}" 
+            class="input-control-text form-control" 
+            data-language="{{ lang_code }}"
+            value="{% if category.id %}{{ category_names|get_item:lang_code }}{% endif %}">
+            {% endfor %}
+        
+            <label for="background_css">CSS Background:</label>
+            <input id="background_css" name="background_css" value="{{ category.background_css }}"></input>
+            <section class="is_active">
+                <label for="is_active">{% trans "category_category_active" %}:</label>
+                <input type="checkbox" id="is_active" name="is_active" {% if category.is_active %}checked{% endif %}>
+            </section>
+            <input type="hidden" name="return_url" value="{{ request.path }}">
+        
+            <button type="submit" class="submit-button-category" disabled>{% trans 'Save' %}</button>
+        </form>
+    </section>
+</div>
+{% endblock manage_content %}
+

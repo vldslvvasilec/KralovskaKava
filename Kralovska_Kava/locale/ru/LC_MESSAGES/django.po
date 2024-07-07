@@ -1,0 +1,733 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-07 18:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: Kralovska_Kava/settings.py:131
+msgid "English"
+msgstr "Английский"
+
+#: Kralovska_Kava/settings.py:132
+msgid "Russian"
+msgstr "Русский"
+
+#: Kralovska_Kava/settings.py:133
+msgid "Czech"
+msgstr "Чешский"
+
+#: Kralovska_Kava/settings.py:134
+msgid "Ukrainian"
+msgstr "Украинский"
+
+#: home/views.py:118
+msgid "Thank you for your review"
+msgstr "Спасибо за ваш отзыв"
+
+#: home/views.py:121
+msgid "Please fill out all fields"
+msgstr "Пожалуйста, заполните все поля"
+
+#: manager/forms.py:13
+msgid "Enter your login"
+msgstr "Введите ваш логин"
+
+#: manager/forms.py:14
+msgid "Login"
+msgstr "Логин"
+
+#: manager/forms.py:17
+msgid "Enter your password"
+msgstr "Введите ваш пароль"
+
+#: manager/forms.py:18
+msgid "Password"
+msgstr "Пароль"
+
+#: manager/forms.py:24
+msgid "The user with this login does not exist"
+msgstr "Пользователь с таким логином не существует."
+
+#: manager/forms.py:35 manager/views.py:54
+msgid "Invalid username or password"
+msgstr "Неправильное имя пользователя или пароль"
+
+#: manager/views.py:35
+msgid "manage-loging-tittle"
+msgstr "Вход менеджера"
+
+#: manager/views.py:51
+msgid "You are not a manager or supermanager"
+msgstr "Вы не являетесь менеджером или суперменеджером."
+
+#: manager/views.py:62
+msgid "admin_panel"
+msgstr "Админ панель"
+
+#: manager/views.py:68
+msgid "You are not authorized to view this page"
+msgstr "У вас нет прав для просмотра этой страницы"
+
+#: manager/views.py:72
+msgid "edit_restaurace_tittle"
+msgstr "Управление ресторанами"
+
+#: manager/views.py:93
+msgid "add_restaurace_tittle"
+msgstr "Добавление ресторана"
+
+#: manager/views.py:104
+msgid "editing_restaurace_tittle"
+msgstr "Управление рестораном"
+
+#: manager/views.py:119
+#, python-brace-format
+msgid "restaurant {restaurant_name_del} was successfully deleted."
+msgstr "Ресторан {restaurant_name_del} был успешно удалён."
+
+#: manager/views.py:121
+msgid "No restaurant selected for deletion."
+msgstr "Не выбран ресторан для удаления."
+
+#: manager/views.py:131
+msgid "edit_category_tittle"
+msgstr "Управление категориями"
+
+#: manager/views.py:151
+msgid "add_category_tittle"
+msgstr "Добавление категории"
+
+#: manager/views.py:163
+msgid "editing_category_tittle"
+msgstr "Управление категорией"
+
+#: manager/views.py:182
+#, python-brace-format
+msgid "category {category_name_del} was successfully deleted."
+msgstr "Категория {category_name_del} была успешно удалена."
+
+#: manager/views.py:184
+msgid "No category selected for deletion."
+msgstr "Не выбрана категория для удаления."
+
+#: manager/views.py:194
+msgid "edit_products_tittle"
+msgstr "Управление продуктами"
+
+#: manager/views.py:213
+msgid "add_product_tittle"
+msgstr "Добавление продукта"
+
+#: manager/views.py:228
+msgid "editing_product_tittle"
+msgstr "Управление продуктом"
+
+#: manager/views.py:250
+#, python-brace-format
+msgid "product {product_name_del} was successfully deleted."
+msgstr "Продукт {product_name_del} был успешно удалён."
+
+#: manager/views.py:252
+msgid "No product selected for deletion."
+msgstr "Не выбран продукт для удаления."
+
+#: manager/views.py:261
+msgid "edit_managers_tittle"
+msgstr "Управление менеджерами"
+
+#: manager/views.py:282
+msgid "add_manager_tittle"
+msgstr "Добавление менеджера"
+
+#: manager/views.py:295
+msgid "editing_manager_tittle"
+msgstr "Управление менеджером"
+
+#: manager/views.py:312
+#, python-brace-format
+msgid "manager {manager_name_del} was successfully deleted."
+msgstr "Менеджер {manager_name_del} успешно удален."
+
+#: manager/views.py:314
+msgid "No managers selected for deletion."
+msgstr "Не выбрано ни одного менеджера для удаления."
+
+#: manager/views.py:324
+msgid "edit_reservations_tittle"
+msgstr "Управление резервациями"
+
+#: manager/views.py:348
+#, python-brace-format
+msgid "Reservation for {reservation_name_del} was successfully deleted."
+msgstr "Резервация для {reservation_name_del} была успешно удалена."
+
+#: manager/views.py:350
+msgid "No reservation selected for deletion."
+msgstr "Не выбрана ни одна резервация для удаления."
+
+#: manager/views.py:358
+msgid "edit_reviews_tittle"
+msgstr "Управление комментариями"
+
+#: manager/views.py:382
+#, python-brace-format
+msgid "Comment for {review_name_del} was successfully deleted."
+msgstr "Комментарий от {review_name_del} успешно удален."
+
+#: manager/views.py:384
+msgid "No Comments selected for deletion."
+msgstr "Не выбраны комментарии для удаления."
+
+#: send_email.py:33
+msgid "Successful Reservation"
+msgstr "Успешная резервация"
+
+msgid ""
+"Dear {user_name},\n\n"
+"Your reservation at Kralovska Kava {restaurant_name} has been successfully made.\n"
+"Date: {reservation_date}\n"
+"Time: {reservation_time}\n\n"
+"Thank you for choosing our restaurant!\n\n"
+"Best regards,\n"
+"The Kralovska Kava {restaurant_name} Team"
+msgstr ""
+"Уважаемый {user_name},\n\n"
+"Ваше бронирование в ресторане Kralovska Kava {restaurant_name} успешно оформлено.\n"
+"Дата: {reservation_date}\n"
+"Время: {reservation_time}\n\n"
+"Спасибо, что выбрали наш ресторан!\n\n"
+"С уважением,\n"
+"Команда ресторана Kralovska Kava {restaurant_name}."
+
+
+
+#: templates/home/about_as.html:5 templates/home/about_as.html:26
+msgid "slide-tittle-prague"
+msgstr "Кофейня в Праге"
+
+#: templates/home/about_as.html:8 templates/home/about_as.html:29
+msgid "slide-content-prague"
+msgstr ""
+"Добро пожаловать в Krarovska Kava — уютное место в сердце Праги, где каждый "
+"может насладиться лучшим кофе в городе. Мы тщательно подбираем зерна от "
+"проверенных поставщиков, чтобы каждая чашка приносила истинное наслаждение. "
+"Наши бариста — настоящие мастера своего дела, которые не только приготовят "
+"вам идеальный эспрессо, но и расскажут о тонкостях кофейного искусства. "
+"Заходите к нам, чтобы ощутить атмосферу уюта и насладиться ароматным кофе в "
+"самом центре Праги."
+
+#: templates/home/about_as.html:12
+msgid "slide-tittle-liberc"
+msgstr "Кофейня в Либерце"
+
+#: templates/home/about_as.html:15
+msgid "slide-content-liberc"
+msgstr ""
+"В Либерце Krarovska Kava стала настоящим местом притяжения для всех "
+"любителей кофе. Здесь каждый найдет что-то по своему вкусу — от "
+"традиционного эспрессо до оригинальных кофейных коктейлей. Мы стремимся "
+"создать атмосферу, в которой вы сможете расслабиться, поработать или "
+"встретиться с друзьями. Наши бариста постоянно совершенствуют свои навыки, "
+"чтобы каждая чашка кофе радовала вас своим вкусом и ароматом. Загляните к "
+"нам в Либерце и позвольте нам подарить вам незабываемые моменты с чашечкой "
+"отличного кофе."
+
+#: templates/home/about_as.html:19
+msgid "slide-tittle-brno"
+msgstr "Кофейня в Брно"
+
+#: templates/home/about_as.html:22
+msgid "slide-content-brno"
+msgstr ""
+"В нашем кафе Krarovska Kava в Брно вы найдете уголок уюта и комфорта, где "
+"можно отдохнуть от суеты большого города. Здесь мы создаем не просто кофе, а "
+"настоящие произведения искусства, которые заряжают энергией и вдохновляют на "
+"новые свершения. Мы гордимся качеством наших напитков и заботой о каждом "
+"клиенте. Наши бариста всегда готовы предложить вам что-то особенное, будь то "
+"классический капучино или авторский напиток. Приходите к нам в Брно, чтобы "
+"почувствовать истинный вкус качественного кофе и насладиться приятной "
+"атмосферой."
+
+#: templates/home/about_as.html:34
+msgid "slide-content-post-text"
+msgstr ""
+"Мы ждем вас в наших кофейнях Krarovska Kava в Праге, Брно и Либерце, чтобы "
+"подарить вам самые приятные и вкусные впечатления!"
+
+#: templates/home/base.html:33
+msgid "aboutUs"
+msgstr "О нас"
+
+#: templates/home/base.html:35
+msgid "menu"
+msgstr "Меню"
+
+#: templates/home/base.html:48
+msgid "reservation"
+msgstr "Резервация"
+
+#: templates/home/product_detail.html:7
+msgid "back-home-category"
+msgstr "Назад"
+
+#: templates/home/product_detail.html:19
+msgid "components"
+msgstr "Состав напитка"
+
+#: templates/home/reviews.html:3
+msgid "home_reviews_tittle"
+msgstr "Комментарии"
+
+#: templates/home/reviews.html:6
+msgid "form_add_comment_tittle"
+msgstr "Оставьте комментарий"
+
+#: templates/home/reviews.html:15
+msgid "home_reviews_name"
+msgstr "Ваше имя"
+
+#: templates/home/reviews.html:16
+msgid "form_add_comment_enter_name"
+msgstr "Введите имя"
+
+#: templates/home/reviews.html:19
+msgid "home_reviews_comment"
+msgstr "Ваш комментарий"
+
+#: templates/home/reviews.html:20
+msgid "form_add_comment_enter_comment"
+msgstr "Введите текст"
+
+#: templates/home/reviews.html:23
+msgid "home_reviews_submit"
+msgstr "Отправить"
+
+#: templates/manager/base.html:45
+msgid "manager_menu_restaurants"
+msgstr "Рестораны"
+
+#: templates/manager/base.html:50
+msgid "manager_menu_categiries"
+msgstr "Категории"
+
+#: templates/manager/base.html:55
+msgid "manager_menu_products"
+msgstr "Продукты"
+
+#: templates/manager/base.html:61
+msgid "manager_menu_managers"
+msgstr "Менеджеры"
+
+#: templates/manager/base.html:67
+msgid "manager_menu_reservations"
+msgstr "Резервации"
+
+#: templates/manager/base.html:72
+msgid "manager_menu_comments"
+msgstr "Комментарии"
+
+#: templates/manager/base.html:80
+msgid "manager_menu_exit"
+msgstr "Выйти"
+
+#: templates/manager/details/category_details.html:11
+#: templates/manager/details/managers_details.html:11
+#: templates/manager/details/product_details.html:11
+#: templates/manager/details/restaurace_details.html:11
+msgid "Back"
+msgstr "Назад"
+
+#: templates/manager/details/category_details.html:17
+#: templates/manager/details/edit_category.html:16
+msgid "category_category_name"
+msgstr "Название"
+
+#: templates/manager/details/category_details.html:30
+msgid "category_category_active"
+msgstr "Активность"
+
+#: templates/manager/details/category_details.html:35
+#: templates/manager/details/managers_details.html:85
+#: templates/manager/details/product_details.html:66
+#: templates/manager/details/restaurace_details.html:65
+msgid "Save"
+msgstr "Сохранить"
+
+#: templates/manager/details/edit_category.html:5
+msgid "category_management"
+msgstr "Управление категориями"
+
+#: templates/manager/details/edit_category.html:11
+msgid "сurrent_сategories"
+msgstr "Актуальные категории"
+
+#: templates/manager/details/edit_category.html:17
+msgid "category_product_quantity"
+msgstr "Количество товаров"
+
+#: templates/manager/details/edit_category.html:18
+msgid "category_creator"
+msgstr "Создатель"
+
+#: templates/manager/details/edit_category.html:19
+msgid "category_creation_date"
+msgstr "Дата создания"
+
+#: templates/manager/details/edit_category.html:20
+msgid "category_is_active"
+msgstr "Активность"
+
+#: templates/manager/details/edit_category.html:45
+msgid "no_categories"
+msgstr "Нет категорий"
+
+#: templates/manager/details/edit_managers.html:5
+msgid "managers_management"
+msgstr "Управление менеджерами"
+
+#: templates/manager/details/edit_managers.html:11
+msgid "сurrent_rmanagers"
+msgstr "Наши менеджеры"
+
+#: templates/manager/details/edit_managers.html:16
+#: templates/manager/details/managers_details.html:16
+msgid "managers_manager_name"
+msgstr "Логин"
+
+#: templates/manager/details/edit_managers.html:17
+#: templates/manager/details/managers_details.html:25
+msgid "managers_manager_first_name"
+msgstr "Имя"
+
+#: templates/manager/details/edit_managers.html:18
+msgid "managers_maneger_last_name"
+msgstr "Фамилия"
+
+#: templates/manager/details/edit_managers.html:19
+#: templates/manager/details/managers_details.html:52
+msgid "managers_manager_type_user"
+msgstr "Тип"
+
+#: templates/manager/details/edit_managers.html:20
+msgid "managers_manager_product_count"
+msgstr "Количество продуктов"
+
+#: templates/manager/details/edit_managers.html:21
+msgid "managers_is_active"
+msgstr "Активность"
+
+#: templates/manager/details/edit_managers.html:47
+msgid "no_managers"
+msgstr "Нет менеджеров"
+
+#: templates/manager/details/edit_product.html:5
+msgid "products_management"
+msgstr "Управление продуктами"
+
+#: templates/manager/details/edit_product.html:11
+msgid "сurrent_products"
+msgstr "Текущие продукты"
+
+#: templates/manager/details/edit_product.html:16
+#: templates/manager/details/product_details.html:48
+msgid "products_products_image"
+msgstr "Изображение"
+
+#: templates/manager/details/edit_product.html:17
+#: templates/manager/details/product_details.html:19
+msgid "products_products_name"
+msgstr "Название"
+
+#: templates/manager/details/edit_product.html:18
+msgid "products_category"
+msgstr "Категория"
+
+#: templates/manager/details/edit_product.html:19
+msgid "products_creator"
+msgstr "Создатель"
+
+#: templates/manager/details/edit_product.html:20
+msgid "products_creation_date"
+msgstr "Дата создания"
+
+#: templates/manager/details/edit_product.html:21
+msgid "products_is_active"
+msgstr "Активность"
+
+#: templates/manager/details/edit_product.html:51
+msgid "no_products"
+msgstr "Нет продуктов"
+
+#: templates/manager/details/edit_reservace.html:5
+msgid "reservations_management"
+msgstr "Управление резервациями"
+
+#: templates/manager/details/edit_reservace.html:11
+msgid "сurrent_reservations"
+msgstr "Актуальные резервации"
+
+#: templates/manager/details/edit_reservace.html:16
+msgid "reservations_reservation_restaurant"
+msgstr "Ресторан"
+
+#: templates/manager/details/edit_reservace.html:17
+msgid "reservations_reservation_name"
+msgstr "Имя"
+
+#: templates/manager/details/edit_reservace.html:18
+msgid "reservations_reservation_email"
+msgstr "Емейл"
+
+#: templates/manager/details/edit_reservace.html:19
+msgid "reservations_reservation_date_create"
+msgstr "Дата создания"
+
+#: templates/manager/details/edit_reservace.html:20
+msgid "reservations_reservation_date"
+msgstr "Дата"
+
+#: templates/manager/details/edit_reservace.html:21
+msgid "reservations_reservation_time"
+msgstr "Время"
+
+#: templates/manager/details/edit_reservace.html:22
+msgid "reservations_is_active"
+msgstr "Активность"
+
+#: templates/manager/details/edit_reservace.html:48
+msgid "no_reservations"
+msgstr "Нет резерваций"
+
+#: templates/manager/details/edit_restaurace.html:5
+msgid "restaurant_management"
+msgstr "Управление ресторанами"
+
+#: templates/manager/details/edit_restaurace.html:11
+msgid "сurrent_restaurants"
+msgstr "Текущие рестораны"
+
+#: templates/manager/details/edit_restaurace.html:16
+#: templates/manager/details/restaurace_details.html:16
+msgid "restaurant_restaurant_name"
+msgstr "Название"
+
+#: templates/manager/details/edit_restaurace.html:17
+#: templates/manager/details/restaurace_details.html:25
+msgid "restaurant_tables_quantity"
+msgstr "Количество столов"
+
+#: templates/manager/details/edit_restaurace.html:18
+msgid "restaurant_reservations_quantity"
+msgstr "Количество бронирований"
+
+#: templates/manager/details/edit_restaurace.html:19
+#: templates/manager/details/restaurace_details.html:55
+msgid "restaurant_creator"
+msgstr "Создатель"
+
+#: templates/manager/details/edit_restaurace.html:20
+msgid "restaurant_creation_date"
+msgstr "Дата создания"
+
+#: templates/manager/details/edit_restaurace.html:21
+msgid "restaurant_is_active"
+msgstr "Активность"
+
+#: templates/manager/details/edit_restaurace.html:47
+msgid "no_restaurants"
+msgstr "Нет ресторанов"
+
+#: templates/manager/details/edit_reviews.html:5
+msgid "reviews_management"
+msgstr "Управление комментариями"
+
+#: templates/manager/details/edit_reviews.html:11
+msgid "сurrent_reviews"
+msgstr "Актуальные комментарии"
+
+#: templates/manager/details/edit_reviews.html:16
+msgid "reviews_name"
+msgstr "Имя"
+
+#: templates/manager/details/edit_reviews.html:17
+msgid "reviews_comment"
+msgstr "Комментарий"
+
+#: templates/manager/details/edit_reviews.html:18
+msgid "reviews_date"
+msgstr "Дата создания"
+
+#: templates/manager/details/edit_reviews.html:40
+msgid "no_reviews"
+msgstr "Нет комментариев"
+
+#: templates/manager/details/managers_details.html:34
+msgid "managers_manager_last_name"
+msgstr "Фамилия"
+
+#: templates/manager/details/managers_details.html:43
+msgid "managers_manager_email"
+msgstr "Электронная почта"
+
+#: templates/manager/details/managers_details.html:59
+msgid "managers_manager_password"
+msgstr "Пароль"
+
+#: templates/manager/details/managers_details.html:72
+msgid "manager_product_count"
+msgstr "Количество созданных продуктов"
+
+#: templates/manager/details/managers_details.html:73
+msgid "manager_date_joined"
+msgstr "Дата создания"
+
+#: templates/manager/details/managers_details.html:74
+msgid "manager_last_login"
+msgstr "Последний вход"
+
+#: templates/manager/details/managers_details.html:79
+msgid "manager_manager_active"
+msgstr "Активность"
+
+#: templates/manager/details/product_details.html:28
+msgid "products_products_description"
+msgstr "Описание"
+
+#: templates/manager/details/product_details.html:37
+msgid "products_products_components"
+msgstr "Компоненты"
+
+#: templates/manager/details/product_details.html:53
+msgid "products_products_category"
+msgstr "Категория"
+
+#: templates/manager/details/product_details.html:61
+msgid "products_products_active"
+msgstr "Активность"
+
+#: templates/manager/details/restaurace_details.html:34
+msgid "restaurant_open"
+msgstr "Открытие"
+
+#: templates/manager/details/restaurace_details.html:43
+msgid "restaurant_close"
+msgstr "Закрытие"
+
+#: templates/manager/details/restaurace_details.html:54
+msgid "restaurant_reservation_count"
+msgstr "Количество бронирований"
+
+#: templates/manager/details/restaurace_details.html:56
+msgid "restaurant_date_create"
+msgstr "Дата создания"
+
+#: templates/manager/details/restaurace_details.html:60
+msgid "restaurant_restaurant_active"
+msgstr "Активность"
+
+#: templates/manager/loging_manage.html:28
+msgid "manage-login-submit"
+msgstr "Войти"
+
+#: templates/reservation/reservation.html:7
+msgid "reservation-title"
+msgstr "Резервация столика"
+
+#: templates/reservation/reservation.html:10
+#: templates/reservation/reservation.html:25
+msgid "reservation-date"
+msgstr "Выберите дату"
+
+#: templates/reservation/reservation.html:15
+msgid "reservation-restaurant"
+msgstr "Выберите ресторан"
+
+#: templates/reservation/reservation.html:23
+#: templates/reservation/reservation.html:48
+msgid "reservation-time"
+msgstr "Выберите время"
+
+#: templates/reservation/reservation.html:30
+msgid "reservation-name"
+msgstr "Ваше имя"
+
+#: templates/reservation/reservation.html:31
+msgid "reservation-enter-name"
+msgstr "Введите ваше имя"
+
+#: templates/reservation/reservation.html:34
+msgid "reservation-email"
+msgstr "Email"
+
+#: templates/reservation/reservation.html:38
+msgid "reservation-book"
+msgstr "Забронировать"
+
+#: templates/reservation/reservation.html:47
+msgid "Choose-another-date"
+msgstr "Выберите другую дату"
+
+#: templates/reservation/reservation_error.html:5
+msgid "reservation-error-tittle"
+msgstr "Ошибка бронирования"
+
+#: templates/reservation/reservation_error.html:6
+msgid "reservation-error-messange"
+msgstr ""
+"К сожалению, произошла ошибка при обработке вашего бронирования. Пожалуйста, "
+"попробуйте позже."
+
+#: templates/reservation/reservation_error.html:8
+msgid "reservation-error-back-link"
+msgstr "Попробовать ещё раз"
+
+#: templates/reservation/reservation_error.html:9
+msgid "reservation-error-home-link"
+msgstr "Вернуться на главную страницу"
+
+#: templates/reservation/reservation_success.html:5
+msgid "reservation-success-tittle"
+msgstr "Бронирование успешно!"
+
+#: templates/reservation/reservation_success.html:6
+msgid "reservation-success-messange"
+msgstr "Ваше бронирование успешно подтверждено."
+
+#: templates/reservation/reservation_success.html:9
+msgid "reservation-success-restaurant"
+msgstr "Ресторан: "
+
+#: templates/reservation/reservation_success.html:13
+msgid "reservation-success-name"
+msgstr "Имя: "
+
+#: templates/reservation/reservation_success.html:17
+msgid "reservation-success-date"
+msgstr "Дата: "
+
+#: templates/reservation/reservation_success.html:21
+msgid "reservation-success-time"
+msgstr "Время: "
+
+#: templates/reservation/reservation_success.html:25
+msgid "reservation-success-home-link"
+msgstr "Вернуться на главную страницу"
+
+#~ msgid "manager_menu_settings"
+#~ msgstr "Настройки"

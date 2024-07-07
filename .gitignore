@@ -1,0 +1,26 @@
+# Python
+*.pyc
+__pycache__/
+
+# Django
+*.sqlite3
+.env
+
+# Virtual environment
+venv/
+env/
+
+# Logs and databases
+*.log
+*.sql
+
+# Ignore media and static files if they are served elsewhere
+/media/
+/static/
+
+# Ignore IDE and editor specific files
+.idea/
+.vscode/
+
+# Google Cloud Platform service account key
+*.json

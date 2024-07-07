@@ -1,0 +1,27 @@
+{% extends "home/base.html" %}
+{% load static i18n %}
+{% block content %}
+<div class="reservation-success-container">
+    <h2 class="reservation-success-tittle">{% trans "reservation-success-tittle" %}</h1>
+    <p class="reservation-success-messange">{% trans "reservation-success-messange" %}</p>
+    <div class="reservation-success-details">
+        <section class="reservation-success-detail">
+            <p class="reservation-success-detail-static">{% trans "reservation-success-restaurant" %}</p>
+            <p class="reservation-success-detail-info">{{ reservation_info.restaurant_name }}</p>
+        </section>
+        <section class="reservation-success-detail">
+            <p class="reservation-success-detail-static">{% trans "reservation-success-name" %}</p>
+            <p class="reservation-success-detail-info">{{ reservation_info.name }}</p>
+        </section>
+        <section class="reservation-success-detail">
+            <p class="reservation-success-detail-static">{% trans "reservation-success-date" %}</p>
+            <p class="reservation-success-detail-info">{{ reservation_info.date }}</p>
+        </section>
+        <section class="reservation-success-detail">
+            <p class="reservation-success-detail-static">{% trans "reservation-success-time" %}</p>
+            <p class="reservation-success-detail-info">{{ reservation_info.time }}</p>
+        </section>
+    </div>
+    <a href="{% url 'home' %}" class="reservation-success-home-link">{% trans "reservation-success-home-link" %}</a>
+</div>
+{% endblock %}

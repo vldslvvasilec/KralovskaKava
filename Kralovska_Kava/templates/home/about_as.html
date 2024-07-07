@@ -1,0 +1,34 @@
+{% load static i18n %}
+<div id="home-main-about-us">
+    <div class="slider">
+        <div class="slide">
+            <h2>{% trans "slide-tittle-prague" %}</h2>
+            <section class="slide-info">
+                <img src="{% static 'images/restourant_prague.jpg' %}" alt="Image 1">
+                <p>{% trans "slide-content-prague" %}</p>
+            </section>
+        </div>
+        <div class="slide">
+            <h2>{% trans "slide-tittle-liberc" %}</h2>
+            <section class="slide-info">
+                <img src="{% static 'images/restourant_liberec.jpg' %}" alt="Image 2">
+                <p>{% trans "slide-content-liberc" %}</p>
+            </section>
+        </div>
+        <div class="slide">
+            <h2>{% trans "slide-tittle-brno" %}</h2> 
+            <section class="slide-info">
+                <img src="{% static 'images/restourant_brno.jpg' %}" alt="Image 3">
+                <p>{% trans "slide-content-brno" %}</p>
+            </section>
+        </div>
+        <div class="slide clone">
+            <h2>{% trans "slide-tittle-prague" %}</h2>
+            <section class="slide-info">
+                <img src="{% static 'images/restourant_prague.jpg' %}" alt="Image 1">
+                <p>{% trans "slide-content-prague" %}</p>
+            </section>
+        </div>
+    </div>
+</div>
+<p class="slide-content-post-text">{% trans "slide-content-post-text" %}</p>

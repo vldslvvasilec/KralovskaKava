@@ -1,0 +1,56 @@
+{% extends "home/base.html" %}
+{% load static i18n %}
+{% block content %}
+
+<div class="container-reservation">
+    <section class="reservation-wrap">
+        <h2 class="reservation-tittle">{% trans "reservation-title" %}</h2>
+        <form class="reservation-form" id="reservation-form">
+            <section class="reservation-choice-date">
+                <h2 class="reservation-choice-date-tittle">{% trans "reservation-date" %}</h2>
+                <div id="calendar"></div>
+            </section>
+            <section class="reservation-choice">
+                <section class="reservation-choice-restaurant">
+                    <h2 class="reservation-choice-restaurant-tittle">{% trans "reservation-restaurant" %}</h2>
+                    <select class="reservation-choice-restaurant-select" id="restaurant-select">
+                        {% for restaurant in restaurants %}
+                            <option class="reservation-choice-restaurant-option" value="{{ restaurant.id }}">{{ restaurant.name }}</option>
+                        {% endfor %}
+                    </select>
+                </section>
+                <section class="reservation-choice-time">
+                    <h2 class="reservation-choice-time-tittle">{% trans "reservation-time" %}</h2>
+                    <select class="reservation-choice-time-select" id="available-times">
+                        <option class="reservation-choice-time-option" disabled selected>{% trans "reservation-date" %}</option>
+                    </select>
+                </section>
+                <section class="reservation-choice-user-info">
+                    <section class="reservation-choice-user-info-name">
+                        <label for="reservation-user-name" class="reservation-choice-user-info-name-tittle">{% trans "reservation-name" %}</label>
+                        <input type="text" id="reservation-user-name" class="reservation-choice-user-info-name-input" name="reservation-user-name" placeholder="{% trans "reservation-enter-name" %}" required>
+                    </section>
+                    <section class="reservation-choice-user-info-email">
+                        <label for="reservation-user-email" class="reservation-choice-user-info-email-tittle">{% trans "reservation-email" %}</label>
+                        <input type="email" id="reservation-user-email" class="reservation-choice-user-info-email-input" name="reservation-user-email" placeholder="example@example.com" required>
+                    </section>
+                </section>
+                <input class="reservation-choice-submit" type="submit" value="{% trans "reservation-book" %}">
+            </section>            
+        </form>
+    </section>
+</div>
+<script>
+    var availableDatesUrl = "{% url 'get_available_dates' %}";
+    var availableTimesUrl = "{% url 'get_available_times' %}";
+    var makeReservationUrl = "{% url 'make_reservation' %}";
+    const errorTimeText = "{% trans "Choose-another-date" %}";
+    const reservarionTimeText = "{% trans "reservation-time" %}";
+    const reservationPageSuccess = "{% url 'reservation_success' %}";
+    const reservationPageError = "{% url 'reservation_error' %}";
+    
+</script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+<script src="{% static 'js/reservation.js' %}"></script>
+
+{% endblock %}

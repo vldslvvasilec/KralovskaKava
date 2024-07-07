@@ -1,0 +1,71 @@
+{% extends "manager/base.html" %}
+{% load static i18n %}
+{% load custom_filters %}
+{% block manage_content %} 
+<div class="manage_product_detail">
+    <h1 class="manage_product_detail_title">{{ page_title }}</h1>
+    <section class="manage_products_detail_content">
+        <form method="post" class="manage-back-button" action="{% url 'manager:back_details' %}">
+            {% csrf_token %}
+            <input type="hidden" name="return_url" value="{{ request.path }}">
+            <button type="submit" class="button">{% trans 'Back' %}</button>
+        </form>
+        <form class="form_control_text" method="POST" enctype="multipart/form-data" action="{% if product.id %}{% url 'manager:update_product' product.id%}{% else %}{% url 'manager:create_product' %}{% endif %}">
+            {% csrf_token %}
+            <input type="hidden" name="product_id" value="{{ product.id }}"> 
+            {% for lang_code, lang_name in languages %}
+            <section class="manage_products_detail_lang">
+                <p>{{ lang_name }}:</p>
+                <label for="name_{{ lang_code }}">{% trans "products_products_name" %}:</label>
+                <input
+                type="text" 
+                id="name_{{ lang_code }}" 
+                name="name_{{ lang_code }}" 
+                class="input-control-text form-control" 
+                data-language="{{ lang_code }}"
+                value="{% if product.id %}{{ product_names|get_item:lang_code }}{% endif %}">
+
+                <label for="description_{{ lang_code }}">{% trans "products_products_description" %}:</label>
+                <textarea 
+                id="description_{{ lang_code }}" 
+                name="description_{{ lang_code }}" 
+                class="input-control-text form-control products-textarea" 
+                data-language="{{ lang_code }}"
+                oninput="removeLeadingSpaces(this)">
+                {% if product.id %}{{ product_descriptions|get_item:lang_code }}{% endif %}</textarea>
+
+                <label for="components_{{ lang_code }}">{% trans "products_products_components" %}:</label>
+                <textarea 
+                id="components_{{ lang_code }}" 
+                name="components_{{ lang_code }}" 
+                class="input-control-text form-control products-textarea" 
+                data-language="{{ lang_code }}"
+                oninput="removeLeadingSpaces(this)">
+                {% if product.id %}{{ product_components|get_item:lang_code }}{% endif %}</textarea>
+            </section>
+            {% endfor %}
+            
+            <label for="product-img">{% trans "products_products_image" %}:</label>
+            <input type="file" id="product-img" name="product-img">
+            <input type="hidden" name="product-img-exist" value="{% if product.image %}{{ product.image.name }}{% endif %}">
+            
+            
+            <label for="product-category">{% trans "products_products_category" %}:</label>
+            <select name="product-category" id="product-category">
+                {% for category in product_category %}
+                    <option value="{{ category.id }}" {% if category.id == product.category_id %} selected {% endif %}>{{ category.name }}</option>
+                {% endfor %}
+            </select>
+
+            <section class="is_active">
+                <label for="is_active">{% trans "products_products_active" %}:</label>
+                <input type="checkbox" id="is_active" name="is_active" {% if product.is_active %}checked{% endif %}>
+            </section>
+            
+            <input type="hidden" name="return_url" value="{{ request.path }}">        
+            <button type="submit" class="submit-button submit-button-products" disabled>{% trans 'Save' %}</button>
+        </form>
+    </section>
+</div>
+{% endblock manage_content %}
+

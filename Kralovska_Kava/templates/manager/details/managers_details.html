@@ -1,0 +1,90 @@
+{% extends "manager/base.html" %}
+{% load static i18n %}
+{% load custom_filters %}
+{% block manage_content %}
+<div class="manage_managers_detail">
+    <h1 class="manage_managers_detail_title">{{ page_title }}</h1>
+    <section class="manage_managers_detail_content">
+        <form method="post" class="manage-back-button" action="{% url 'manager:back_details' %}">
+            {% csrf_token %}
+            <input type="hidden" name="return_url" value="{{ request.path }}">
+            <button type="submit" class="button">{% trans 'Back' %}</button>
+        </form>
+        <form class="form_control_managers_text" method="POST" action="{% if manager.id %}{% url 'manager:update_manager' manager.id%}{% else %}{% url 'manager:create_manager' %}{% endif %}">
+            {% csrf_token %}
+            <input type="hidden" name="manager_id" value="{{ manager.id }}"> 
+            <label for="name_manager">{% trans "managers_manager_name" %}</label>
+            <input 
+            type="text" 
+            id="name_manager" 
+            name="name_manager" 
+            class="input-control-managers-text"
+            required
+            value="{% if manager.id %}{{ manager.username }}{% endif %}">
+        
+            <label for="managers_first_name">{% trans "managers_manager_first_name" %}</label>
+            <input 
+            type="text" 
+            id="managers_first_name" 
+            name="managers_first_name" 
+            class="input-control-managers-text"
+            required
+            value="{% if manager.id %}{{ manager.first_name }}{% endif %}">
+
+            <label for="managers_last_name">{% trans "managers_manager_last_name" %}</label>
+            <input 
+            type="text" 
+            id="managers_last_name" 
+            name="managers_last_name" 
+            class="input-control-managers-text"
+            required
+            value="{% if manager.id %}{{ manager.last_name }}{% endif %}">
+
+            <label for="managers_email">{% trans "managers_manager_email" %}</label>
+            <input 
+            type="email" 
+            id="managers_email" 
+            name="managers_email" 
+            class="input-control-managers-text"
+            required
+            value="{% if manager.id %}{{ manager.email }}{% endif %}">
+
+            <label for="manager_type_user">{% trans "managers_manager_type_user" %}:</label>
+            <select name="manager_type_user" id="manager_type_user">
+                {% for type_key, type_label in user_types %}
+                    <option value="{{ type_key }}" selected>{{ type_label }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="managers_password">{% trans "managers_manager_password" %}</label>
+            <input 
+            type="password" 
+            id="managers_password" 
+            name="managers_password" 
+            class="input-control-managers-text" 
+            required
+            value="{% if manager.id %}{{ manager.password }}{% endif %}">
+
+
+            
+            {% if manager.id %} 
+            <section class="manager_self_details">  
+                <p class="manager_self">{% trans "manager_product_count" %}: {{ products_count }}</p>
+                <p class="manager_self">{% trans "manager_date_joined" %}: {{ manager.date_joined }}</p>
+                <p class="manager_self">{% trans "manager_last_login" %}: {{ manager.last_login }}</p>
+            </section>
+            {% endif %}
+
+            <section class="is_active">
+                <label for="is_active">{% trans "manager_manager_active" %}:</label>
+                <input type="checkbox" id="is_active" name="is_active" {% if manager.is_active %}checked{% endif %}>
+            </section>    
+            
+            <input type="hidden" name="return_url" value="{{ request.path }}">
+        
+            <button type="submit" class="submit-btn-managers" disabled>{% trans 'Save' %}</button>
+        </form>
+    </section>
+</div>
+{% endblock manage_content %}
+

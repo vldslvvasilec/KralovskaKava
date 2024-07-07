@@ -1,0 +1,60 @@
+{% extends "manager/base.html" %}
+{% load i18n %}
+{% block manage_content %}
+<div class="manage_restaurant"> 
+    <h2 class="title_manage_restaurant">{% trans "restaurant_management" %}</h2>
+    {% if manage_restaurant_error_message %}
+    <div class="error_message">
+        {{ manage_restaurant_error_message }}
+    </div>
+    {% endif %}
+    <h3 class="actual_restaurant">{% trans "сurrent_restaurants" %}</h3>
+    <section class="manage_restaurant_forms">
+        <table class="restaurant_table">
+            <thead class="restaurant_table_thead">
+                <tr>
+                    <th>{% trans "restaurant_restaurant_name" %}</th>
+                    <th>{% trans "restaurant_tables_quantity" %}</th>
+                    <th>{% trans "restaurant_reservations_quantity" %}</th>
+                    <th>{% trans "restaurant_creator" %}</th>
+                    <th>{% trans "restaurant_creation_date" %}</th>
+                    <th>{% trans "restaurant_is_active" %}</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="restaurant_table_tbody">
+                {% if manage_restaurant_restaurants %}
+                {% for restaurant in manage_restaurant_restaurants %}
+                <tr>
+                    <td>{{ restaurant.name }}</td>
+                    <td>{{ restaurant.tables }}</td>
+                    <td>{{ restaurant.reservation_count }}</td>
+                    <td>{{ restaurant.creator }}</td>
+                    <td>{{ restaurant.date_created }}</td>
+                    <td><section class="restaurants_checked">{% if restaurant.is_active %}{% include "svg/check_circle.svg" %}{% else %}{% include "svg/no_check_circle.svg" %}{% endif %}</section></td>
+                    <td>
+                        <form class="manage_restaurant_form_tools" action="{% url 'manager:menu_restaurants' %}" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="manage_restaurant_restaurant_id" value="{{ restaurant.id }}">
+                            <button type="submit" name="manage_restaurant_edit" class="manage_restaurant_buttons">{% include "svg/edit.svg" %}</button>
+                            <button type="submit" name="manage_restaurant_delete_restaurant" class="manage_restaurant_buttons">{% include "svg/delete.svg" %}</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% else %}
+                <tr class="manage-no-restaurant">
+                    <td  colspan="6">{% trans "no_restaurants" %}</td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+        <form action="{% url 'manager:menu_restaurants' %}" method="post" class="manage-add-restaurant">
+            {% csrf_token %}
+            <section class="button_manage_categories_menu">
+                <button type="submit" name="manage_restaurant_add_restaurant" class="manage_restaurant_buttons manage_restaurant_buttons_add">{% include "svg/add.svg" %}</button>
+            </section>
+        </form>
+    </section>
+</div>
+{% endblock manage_content %}

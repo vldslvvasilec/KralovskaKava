@@ -1,0 +1,55 @@
+{% extends "manager/base.html" %}
+{% load i18n %}
+{% block manage_content %}
+<div class="manage_reservations">
+    <h2 class="title_reservation_reservations">{% trans "reservations_management" %}</h2>
+    {% if manage_reservations_error_message %}
+    <div class="error_message">
+        {{ manage_reservations_error_message }}
+    </div>
+    {% endif %}
+    <h3 class="actual_reservations">{% trans "сurrent_reservations" %}</h3>
+    <section class="manage_reservations_forms">
+        <table class="reservations_table">
+            <thead class="reservations_table_thead">
+                <tr>
+                    <th>{% trans "reservations_reservation_restaurant" %}</th>
+                    <th>{% trans "reservations_reservation_name" %}</th>
+                    <th>{% trans "reservations_reservation_email" %}</th>
+                    <th>{% trans "reservations_reservation_date_create" %}</th>
+                    <th>{% trans "reservations_reservation_date" %}</th>
+                    <th>{% trans "reservations_reservation_time" %}</th>
+                    <th>{% trans "reservations_is_active" %}</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="reservations_table_tbody">
+                {% if manage_reservations_reservations %}
+                {% for reservation in manage_reservations_reservations %}
+                <tr>
+                    <td>{{ reservation.restaurant }}</td>
+                    <td>{{ reservation.name }}</td>
+                    <td>{{ reservation.email }}</td>
+                    <td>{{ reservation.created_at }}</td>
+                    <td>{{ reservation.date }}</td>
+                    <td>{{ reservation.time }}</td>
+                    <td><section class="reservations_checked">{% if reservation.is_active %}{% include "svg/check_circle.svg" %}{% else %}{% include "svg/no_check_circle.svg" %}{% endif %}</section></td>
+                    <td>
+                        <form class="manage_reservations_form_tools" action="{% url 'manager:menu_reservations' %}" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="manage_reservations_reservation_id" value="{{ reservation.id }}">
+                            <button type="submit" name="manage_reservations_delete_reservation" class="manage_reservations_buttons">{% include "svg/delete.svg" %}</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% else %}
+                <tr class="manage-no-reservations">
+                    <td  colspan="6">{% trans "no_reservations" %}</td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </section>
+</div>
+{% endblock manage_content %}

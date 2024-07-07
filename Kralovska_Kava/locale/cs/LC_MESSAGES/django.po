@@ -1,0 +1,727 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-07 18:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: Kralovska_Kava/settings.py:131
+msgid "English"
+msgstr "Angličtina"
+
+#: Kralovska_Kava/settings.py:132
+msgid "Russian"
+msgstr "Ruština"
+
+#: Kralovska_Kava/settings.py:133
+msgid "Czech"
+msgstr "Čeština"
+
+#: Kralovska_Kava/settings.py:134
+msgid "Ukrainian"
+msgstr "Ukrajinština"
+
+#: home/views.py:118
+msgid "Thank you for your review"
+msgstr "Děkujeme za vaši recenzi"
+
+#: home/views.py:121
+msgid "Please fill out all fields"
+msgstr "Prosím, vyplňte všechna pole"
+
+#: manager/forms.py:13
+msgid "Enter your login"
+msgstr "Zadejte své uživatelské jméno"
+
+#: manager/forms.py:14
+msgid "Login"
+msgstr "Login"
+
+#: manager/forms.py:17
+msgid "Enter your password"
+msgstr "Zadejte své heslo"
+
+#: manager/forms.py:18
+msgid "Password"
+msgstr "Heslo"
+
+#: manager/forms.py:24
+msgid "The user with this login does not exist"
+msgstr "Uživatel s tímto přihlašovacím jménem neexistuje."
+
+#: manager/forms.py:35 manager/views.py:54
+msgid "Invalid username or password"
+msgstr "Neplatné uživatelské jméno nebo heslo."
+
+#: manager/views.py:35
+msgid "manage-loging-tittle"
+msgstr "Přihlášení manažera"
+
+#: manager/views.py:51
+msgid "You are not a manager or supermanager"
+msgstr "Nejste manažer nebo supermanažer."
+
+#: manager/views.py:62
+msgid "admin_panel"
+msgstr "Admin panel"
+
+#: manager/views.py:68
+msgid "You are not authorized to view this page"
+msgstr "Nemáte oprávnění zobrazit tuto stránku"
+
+#: manager/views.py:72
+msgid "edit_restaurace_tittle"
+msgstr "Správa restaurací"
+
+#: manager/views.py:93
+msgid "add_restaurace_tittle"
+msgstr "Přidání restaurace"
+
+#: manager/views.py:104
+msgid "editing_restaurace_tittle"
+msgstr "Správa restaurace"
+
+#: manager/views.py:119
+#, python-brace-format
+msgid "restaurant {restaurant_name_del} was successfully deleted."
+msgstr "Restaurace {restaurant_name_del} byla úspěšně smazána."
+
+#: manager/views.py:121
+msgid "No restaurant selected for deletion."
+msgstr "Nebyla vybrána žádná restaurace ke smazání."
+
+#: manager/views.py:131
+msgid "edit_category_tittle"
+msgstr "Správa kategorií"
+
+#: manager/views.py:151
+msgid "add_category_tittle"
+msgstr "Přidání kategorie"
+
+#: manager/views.py:163
+msgid "editing_category_tittle"
+msgstr "Správa kategorie"
+
+#: manager/views.py:182
+#, python-brace-format
+msgid "category {category_name_del} was successfully deleted."
+msgstr "Kategorie {category_name_del} byla úspěšně smazána."
+
+#: manager/views.py:184
+msgid "No category selected for deletion."
+msgstr "Nebyla vybrána žádná kategorie ke smazání."
+
+#: manager/views.py:194
+msgid "edit_products_tittle"
+msgstr "Správa produktů"
+
+#: manager/views.py:213
+msgid "add_product_tittle"
+msgstr "Přidání produktu"
+
+#: manager/views.py:228
+msgid "editing_product_tittle"
+msgstr "Správa produktu"
+
+#: manager/views.py:250
+#, python-brace-format
+msgid "product {product_name_del} was successfully deleted."
+msgstr "Produkt {product_name_del} byl úspěšně smazán."
+
+#: manager/views.py:252
+msgid "No product selected for deletion."
+msgstr "Nebyl vybrán žádný produkt ke smazání."
+
+#: manager/views.py:261
+msgid "edit_managers_tittle"
+msgstr "Správa manažerů"
+
+#: manager/views.py:282
+msgid "add_manager_tittle"
+msgstr "Přidání manažera"
+
+#: manager/views.py:295
+msgid "editing_manager_tittle"
+msgstr "Správa manažera"
+
+#: manager/views.py:312
+#, python-brace-format
+msgid "manager {manager_name_del} was successfully deleted."
+msgstr "Manažer {manager_name_del} byl úspěšně smazán."
+
+#: manager/views.py:314
+msgid "No managers selected for deletion."
+msgstr "Nebyl vybrán žádný manažer ke smazání."
+
+#: manager/views.py:324
+msgid "edit_reservations_tittle"
+msgstr "Správa rezervací"
+
+#: manager/views.py:348
+#, python-brace-format
+msgid "Reservation for {reservation_name_del} was successfully deleted."
+msgstr "Rezervace pro {reservation_name_del} byla úspěšně smazána."
+
+#: manager/views.py:350
+msgid "No reservation selected for deletion."
+msgstr "Není vybrána žádná rezervace ke smazání."
+
+#: manager/views.py:358
+msgid "edit_reviews_tittle"
+msgstr "Správa komentářů"
+
+#: manager/views.py:382
+#, python-brace-format
+msgid "Comment for {review_name_del} was successfully deleted."
+msgstr "Komentář od {review_name_del} byl úspěšně smazán."
+
+#: manager/views.py:384
+msgid "No Comments selected for deletion."
+msgstr "Nebyly vybrány žádné komentáře k odstranění."
+
+#: send_email.py:33
+msgid "Successful Reservation"
+msgstr "Úspěšná rezervace"
+
+msgid ""
+"Dear {user_name},\n\n"
+"Your reservation at Kralovska Kava {restaurant_name} has been successfully made.\n"
+"Date: {reservation_date}\n"
+"Time: {reservation_time}\n\n"
+"Thank you for choosing our restaurant!\n\n"
+"Best regards,\n"
+"The Kralovska Kava {restaurant_name} Team"
+msgstr ""
+"Vážený {user_name},\n\n"
+"Vaše rezervace v restauraci Kralovska Kava {restaurant_name} byla úspěšně vytvořena.\n"
+"Datum: {reservation_date}\n"
+"Čas: {reservation_time}\n\n"
+"Děkujeme, že jste si vybrali naši restauraci!\n\n"
+"S pozdravem,\n"
+"Tým restaurace Kralovska Kava {restaurant_name}."
+
+
+#: templates/home/about_as.html:5 templates/home/about_as.html:26
+msgid "slide-tittle-prague"
+msgstr "Kavárna v Praze"
+
+#: templates/home/about_as.html:8 templates/home/about_as.html:29
+msgid "slide-content-prague"
+msgstr ""
+"Vítejte v Krarovska Kava, útulném místě v srdci Prahy, kde si každý může "
+"vychutnat nejlepší kávu ve městě. Pečlivě vybíráme zrna od důvěryhodných "
+"dodavatelů, aby každá šálek přinesla skutečné potěšení. Naši baristé jsou "
+"skutečnými mistry svého řemesla, kteří vám nejen připraví dokonalé espresso, "
+"ale také vám poví o složitostech kávového umění. Navštivte nás, abyste "
+"pocítili útulnou atmosféru a vychutnali si aromatickou kávu přímo v centru "
+"Prahy."
+
+#: templates/home/about_as.html:12
+msgid "slide-tittle-liberc"
+msgstr "Kavárna v Liberci"
+
+#: templates/home/about_as.html:15
+msgid "slide-content-liberc"
+msgstr ""
+"V Liberci se Krarovska Kava stala opravdovým místem setkání pro všechny "
+"milovníky kávy. Zde si každý najde něco podle svého gusta, od tradičního "
+"espressa po originální kávové koktejly. Snažíme se vytvořit atmosféru, ve "
+"které si můžete odpočinout, pracovat nebo se setkat s přáteli. Naši baristé "
+"neustále zdokonalují své dovednosti, aby každá šálek kávy vás potěšila svou "
+"chutí a vůní. Navštivte nás v Liberci a nechte nás darovat vám "
+"nezapomenutelné okamžiky s šálkem vynikající kávy."
+
+#: templates/home/about_as.html:19
+msgid "slide-tittle-brno"
+msgstr "Kavárna v Brně"
+
+#: templates/home/about_as.html:22
+msgid "slide-content-brno"
+msgstr ""
+"V naší kavárně Krarovska Kava v Brně najdete koutek útulnosti a pohodlí, kde "
+"si můžete odpočinout od shonu velkoměsta. Tady tvoříme nejen kávu, ale "
+"opravdová umělecká díla, která dodávají energii a inspirují k novým "
+"úspěchům. Jsme hrdí na kvalitu našich nápojů a péči o každého zákazníka. "
+"Naši baristé jsou vždy připraveni vám nabídnout něco zvláštního, ať už je to "
+"klasické cappuccino nebo autorský nápoj. Přijďte k nám do Brna, abyste "
+"pocítili opravdovou chuť kvalitní kávy a užili si příjemnou atmosféru."
+
+#: templates/home/about_as.html:34
+msgid "slide-content-post-text"
+msgstr ""
+"Těšíme se na vás v našich kavárnách Krarovska Kava v Praze, Brně a Liberci, "
+"abychom vám poskytli ty nejpříjemnější a nejchutnější zážitky!"
+
+#: templates/home/base.html:33
+msgid "aboutUs"
+msgstr "O nás"
+
+#: templates/home/base.html:35
+msgid "menu"
+msgstr "Menu"
+
+#: templates/home/base.html:48
+msgid "reservation"
+msgstr "Rezervace"
+
+#: templates/home/product_detail.html:7
+msgid "back-home-category"
+msgstr "Zpět"
+
+#: templates/home/product_detail.html:19
+msgid "components"
+msgstr "Složení nápoje"
+
+#: templates/home/reviews.html:3
+msgid "home_reviews_tittle"
+msgstr "Komentáře"
+
+#: templates/home/reviews.html:6
+msgid "form_add_comment_tittle"
+msgstr "Zanechte komentář"
+
+#: templates/home/reviews.html:15
+msgid "home_reviews_name"
+msgstr "Vaše jméno"
+
+#: templates/home/reviews.html:16
+msgid "form_add_comment_enter_name"
+msgstr "Zadejte své jméno"
+
+#: templates/home/reviews.html:19
+msgid "home_reviews_comment"
+msgstr "Váš komentář"
+
+#: templates/home/reviews.html:20
+msgid "form_add_comment_enter_comment"
+msgstr "Zadejte text"
+
+#: templates/home/reviews.html:23
+msgid "home_reviews_submit"
+msgstr "Odeslat"
+
+#: templates/manager/base.html:45
+msgid "manager_menu_restaurants"
+msgstr "Restaurace"
+
+#: templates/manager/base.html:50
+msgid "manager_menu_categiries"
+msgstr "Kategorie"
+
+#: templates/manager/base.html:55
+msgid "manager_menu_products"
+msgstr "Produkty"
+
+#: templates/manager/base.html:61
+msgid "manager_menu_managers"
+msgstr "Manažeři"
+
+#: templates/manager/base.html:67
+msgid "manager_menu_reservations"
+msgstr "Rezervace"
+
+#: templates/manager/base.html:72
+msgid "manager_menu_comments"
+msgstr "Komentáře"
+
+#: templates/manager/base.html:80
+msgid "manager_menu_exit"
+msgstr "Odhlásit se"
+
+#: templates/manager/details/category_details.html:11
+#: templates/manager/details/managers_details.html:11
+#: templates/manager/details/product_details.html:11
+#: templates/manager/details/restaurace_details.html:11
+msgid "Back"
+msgstr "Zpět"
+
+#: templates/manager/details/category_details.html:17
+#: templates/manager/details/edit_category.html:16
+msgid "category_category_name"
+msgstr "Název"
+
+#: templates/manager/details/category_details.html:30
+msgid "category_category_active"
+msgstr "Aktivita"
+
+#: templates/manager/details/category_details.html:35
+#: templates/manager/details/managers_details.html:85
+#: templates/manager/details/product_details.html:66
+#: templates/manager/details/restaurace_details.html:65
+msgid "Save"
+msgstr "Uložit"
+
+#: templates/manager/details/edit_category.html:5
+msgid "category_management"
+msgstr "Správa kategorií"
+
+#: templates/manager/details/edit_category.html:11
+msgid "сurrent_сategories"
+msgstr "Aktuální kategorie"
+
+#: templates/manager/details/edit_category.html:17
+msgid "category_product_quantity"
+msgstr "Počet produktů"
+
+#: templates/manager/details/edit_category.html:18
+msgid "category_creator"
+msgstr "Tvůrce"
+
+#: templates/manager/details/edit_category.html:19
+msgid "category_creation_date"
+msgstr "Datum vytvoření"
+
+#: templates/manager/details/edit_category.html:20
+msgid "category_is_active"
+msgstr "Aktivita"
+
+#: templates/manager/details/edit_category.html:45
+msgid "no_categories"
+msgstr "Žádné kategorie"
+
+#: templates/manager/details/edit_managers.html:5
+msgid "managers_management"
+msgstr "Správa manažerů"
+
+#: templates/manager/details/edit_managers.html:11
+msgid "сurrent_rmanagers"
+msgstr "Naši manažeři"
+
+#: templates/manager/details/edit_managers.html:16
+#: templates/manager/details/managers_details.html:16
+msgid "managers_manager_name"
+msgstr "Přihlašovací jméno"
+
+#: templates/manager/details/edit_managers.html:17
+#: templates/manager/details/managers_details.html:25
+msgid "managers_manager_first_name"
+msgstr "Jméno"
+
+#: templates/manager/details/edit_managers.html:18
+msgid "managers_maneger_last_name"
+msgstr "Příjmení"
+
+#: templates/manager/details/edit_managers.html:19
+#: templates/manager/details/managers_details.html:52
+msgid "managers_manager_type_user"
+msgstr "Typ"
+
+#: templates/manager/details/edit_managers.html:20
+msgid "managers_manager_product_count"
+msgstr "Počet produktů"
+
+#: templates/manager/details/edit_managers.html:21
+msgid "managers_is_active"
+msgstr "Aktivita"
+
+#: templates/manager/details/edit_managers.html:47
+msgid "no_managers"
+msgstr "Žádní manažeři"
+
+#: templates/manager/details/edit_product.html:5
+msgid "products_management"
+msgstr "Správa produktů"
+
+#: templates/manager/details/edit_product.html:11
+msgid "сurrent_products"
+msgstr "Aktuální produkty"
+
+#: templates/manager/details/edit_product.html:16
+#: templates/manager/details/product_details.html:48
+msgid "products_products_image"
+msgstr "Obrázek"
+
+#: templates/manager/details/edit_product.html:17
+#: templates/manager/details/product_details.html:19
+msgid "products_products_name"
+msgstr "Název"
+
+#: templates/manager/details/edit_product.html:18
+msgid "products_category"
+msgstr "Kategorie"
+
+#: templates/manager/details/edit_product.html:19
+msgid "products_creator"
+msgstr "Tvůrce"
+
+#: templates/manager/details/edit_product.html:20
+msgid "products_creation_date"
+msgstr "Datum vytvoření"
+
+#: templates/manager/details/edit_product.html:21
+msgid "products_is_active"
+msgstr "Aktivita"
+
+#: templates/manager/details/edit_product.html:51
+msgid "no_products"
+msgstr "Žádné produkty"
+
+#: templates/manager/details/edit_reservace.html:5
+msgid "reservations_management"
+msgstr "Správa rezervací"
+
+#: templates/manager/details/edit_reservace.html:11
+msgid "сurrent_reservations"
+msgstr "Aktuální rezervace"
+
+#: templates/manager/details/edit_reservace.html:16
+msgid "reservations_reservation_restaurant"
+msgstr "Restaurace"
+
+#: templates/manager/details/edit_reservace.html:17
+msgid "reservations_reservation_name"
+msgstr "Jméno"
+
+#: templates/manager/details/edit_reservace.html:18
+msgid "reservations_reservation_email"
+msgstr "E-mail"
+
+#: templates/manager/details/edit_reservace.html:19
+msgid "reservations_reservation_date_create"
+msgstr "Datum vytvoření"
+
+#: templates/manager/details/edit_reservace.html:20
+msgid "reservations_reservation_date"
+msgstr "Datum"
+
+#: templates/manager/details/edit_reservace.html:21
+msgid "reservations_reservation_time"
+msgstr "Čas"
+
+#: templates/manager/details/edit_reservace.html:22
+msgid "reservations_is_active"
+msgstr "Aktivita"
+
+#: templates/manager/details/edit_reservace.html:48
+msgid "no_reservations"
+msgstr "Žádné rezervace"
+
+#: templates/manager/details/edit_restaurace.html:5
+msgid "restaurant_management"
+msgstr "Správa restaurací"
+
+#: templates/manager/details/edit_restaurace.html:11
+msgid "сurrent_restaurants"
+msgstr "Aktuální restaurace"
+
+#: templates/manager/details/edit_restaurace.html:16
+#: templates/manager/details/restaurace_details.html:16
+msgid "restaurant_restaurant_name"
+msgstr "Název"
+
+#: templates/manager/details/edit_restaurace.html:17
+#: templates/manager/details/restaurace_details.html:25
+msgid "restaurant_tables_quantity"
+msgstr "Počet stolů"
+
+#: templates/manager/details/edit_restaurace.html:18
+msgid "restaurant_reservations_quantity"
+msgstr "Počet rezervací"
+
+#: templates/manager/details/edit_restaurace.html:19
+#: templates/manager/details/restaurace_details.html:55
+msgid "restaurant_creator"
+msgstr "Tvůrce"
+
+#: templates/manager/details/edit_restaurace.html:20
+msgid "restaurant_creation_date"
+msgstr "Datum vytvoření"
+
+#: templates/manager/details/edit_restaurace.html:21
+msgid "restaurant_is_active"
+msgstr "Aktivita"
+
+#: templates/manager/details/edit_restaurace.html:47
+msgid "no_restaurants"
+msgstr "Žádné restaurace"
+
+#: templates/manager/details/edit_reviews.html:5
+msgid "reviews_management"
+msgstr "Správa komentářů"
+
+#: templates/manager/details/edit_reviews.html:11
+msgid "сurrent_reviews"
+msgstr "Aktuální komentáře"
+
+#: templates/manager/details/edit_reviews.html:16
+msgid "reviews_name"
+msgstr "Jméno"
+
+#: templates/manager/details/edit_reviews.html:17
+msgid "reviews_comment"
+msgstr "Komentář"
+
+#: templates/manager/details/edit_reviews.html:18
+msgid "reviews_date"
+msgstr "Datum vytvoření"
+
+#: templates/manager/details/edit_reviews.html:40
+msgid "no_reviews"
+msgstr "Žádné komentáře"
+
+#: templates/manager/details/managers_details.html:34
+msgid "managers_manager_last_name"
+msgstr "Příjmení"
+
+#: templates/manager/details/managers_details.html:43
+msgid "managers_manager_email"
+msgstr "Email"
+
+#: templates/manager/details/managers_details.html:59
+msgid "managers_manager_password"
+msgstr "Heslo"
+
+#: templates/manager/details/managers_details.html:72
+msgid "manager_product_count"
+msgstr "Počet vytvořených produktů"
+
+#: templates/manager/details/managers_details.html:73
+msgid "manager_date_joined"
+msgstr "Datum vytvoření"
+
+#: templates/manager/details/managers_details.html:74
+msgid "manager_last_login"
+msgstr "Poslední přihlášení"
+
+#: templates/manager/details/managers_details.html:79
+msgid "manager_manager_active"
+msgstr "Aktivita"
+
+#: templates/manager/details/product_details.html:28
+msgid "products_products_description"
+msgstr "Popis"
+
+#: templates/manager/details/product_details.html:37
+msgid "products_products_components"
+msgstr "Komponenty"
+
+#: templates/manager/details/product_details.html:53
+msgid "products_products_category"
+msgstr "Kategorie"
+
+#: templates/manager/details/product_details.html:61
+msgid "products_products_active"
+msgstr "Aktivita"
+
+#: templates/manager/details/restaurace_details.html:34
+msgid "restaurant_open"
+msgstr "Otevření"
+
+#: templates/manager/details/restaurace_details.html:43
+msgid "restaurant_close"
+msgstr "Zavření"
+
+#: templates/manager/details/restaurace_details.html:54
+msgid "restaurant_reservation_count"
+msgstr "Počet rezervací"
+
+#: templates/manager/details/restaurace_details.html:56
+msgid "restaurant_date_create"
+msgstr "Datum vytvoření"
+
+#: templates/manager/details/restaurace_details.html:60
+msgid "restaurant_restaurant_active"
+msgstr "Aktivita"
+
+#: templates/manager/loging_manage.html:28
+msgid "manage-login-submit"
+msgstr "Přihlásit se"
+
+#: templates/reservation/reservation.html:7
+msgid "reservation-title"
+msgstr "Rezervace stolu"
+
+#: templates/reservation/reservation.html:10
+#: templates/reservation/reservation.html:25
+msgid "reservation-date"
+msgstr "Vyberte datum"
+
+#: templates/reservation/reservation.html:15
+msgid "reservation-restaurant"
+msgstr "Vyberte restauraci"
+
+#: templates/reservation/reservation.html:23
+#: templates/reservation/reservation.html:48
+msgid "reservation-time"
+msgstr "Vyberte čas"
+
+#: templates/reservation/reservation.html:30
+msgid "reservation-name"
+msgstr "Vaše jméno"
+
+#: templates/reservation/reservation.html:31
+msgid "reservation-enter-name"
+msgstr "Zadejte vaše jméno"
+
+#: templates/reservation/reservation.html:34
+msgid "reservation-email"
+msgstr "Email"
+
+#: templates/reservation/reservation.html:38
+msgid "reservation-book"
+msgstr "Rezervovat"
+
+#: templates/reservation/reservation.html:47
+msgid "Choose-another-date"
+msgstr "Vyberte jiné datum"
+
+#: templates/reservation/reservation_error.html:5
+msgid "reservation-error-tittle"
+msgstr "Chyba rezervace"
+
+#: templates/reservation/reservation_error.html:6
+msgid "reservation-error-messange"
+msgstr ""
+"Bohužel došlo k chybě při zpracování vaší rezervace. Prosím, zkuste to "
+"později."
+
+#: templates/reservation/reservation_error.html:8
+msgid "reservation-error-back-link"
+msgstr "Zkusit znovu"
+
+#: templates/reservation/reservation_error.html:9
+msgid "reservation-error-home-link"
+msgstr "Vrátit se na hlavní stránku"
+
+#: templates/reservation/reservation_success.html:5
+msgid "reservation-success-tittle"
+msgstr "Rezervace úspěšná!"
+
+#: templates/reservation/reservation_success.html:6
+msgid "reservation-success-messange"
+msgstr "Vaše rezervace byla úspěšně potvrzena."
+
+#: templates/reservation/reservation_success.html:9
+msgid "reservation-success-restaurant"
+msgstr "Restaurace: "
+
+#: templates/reservation/reservation_success.html:13
+msgid "reservation-success-name"
+msgstr "Jméno: "
+
+#: templates/reservation/reservation_success.html:17
+msgid "reservation-success-date"
+msgstr "Datum: "
+
+#: templates/reservation/reservation_success.html:21
+msgid "reservation-success-time"
+msgstr "Čas: "
+
+#: templates/reservation/reservation_success.html:25
+msgid "reservation-success-home-link"
+msgstr "Vrátit se na hlavní stránku"
+
+#~ msgid "manager_menu_settings"
+#~ msgstr "Nastavení"

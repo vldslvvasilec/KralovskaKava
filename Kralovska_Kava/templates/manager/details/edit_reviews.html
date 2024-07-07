@@ -1,0 +1,47 @@
+{% extends "manager/base.html" %}
+{% load i18n %}
+{% block manage_content %}
+<div class="manage_reviews">
+    <h2 class="title_review_reviews">{% trans "reviews_management" %}</h2>
+    {% if manage_reviews_error %}
+    <div class="error_reviews">
+        {{ manage_reviews_error }}
+    </div>
+    {% endif %}
+    <h3 class="actual_reviews">{% trans "сurrent_reviews" %}</h3>
+    <section class="manage_reviews_forms">
+        <table class="reviews_table">
+            <thead class="reviews_table_thead">
+                <tr>
+                    <th>{% trans "reviews_name" %}</th>
+                    <th>{% trans "reviews_comment" %}</th>
+                    <th>{% trans "reviews_date" %}</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="reviews_table_tbody">
+                {% if manage_reviews %}
+                {% for review in manage_reviews %}
+                <tr>
+                    <td>{{ review.name }}</td>
+                    <td>{{ review.comment }}</td>
+                    <td>{{ review.date_created }}</td>
+                    <td>
+                        <form class="manage_reviews_form_tools" action="{% url 'manager:menu_comments' %}" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="manage_reviews_review_id" value="{{ review.id }}">
+                            <button type="submit" name="manage_reviews_delete_review" class="manage_review_buttons">{% include "svg/delete.svg" %}</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% else %}
+                <tr class="manage-no-reviews">
+                    <td  colspan="6">{% trans "no_reviews" %}</td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </section>
+</div>
+{% endblock manage_content %}

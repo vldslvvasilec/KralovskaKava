@@ -1,0 +1,64 @@
+{% extends "manager/base.html" %}
+{% load i18n %}
+{% block manage_content %}
+<div class="manage_products">
+    <h2 class="title_manage_products">{% trans "products_management" %}</h2>
+    {% if manage_products_error_message %}
+    <div class="error_message">
+        {{ manage_products_error_message }}
+    </div>
+    {% endif %}
+    <h3 class="actual_products">{% trans "сurrent_products" %}</h3>
+    <section class="manage_products_forms">
+        <table class="products_table">
+            <thead class="products_table_thead">
+                <tr>
+                    <th>{% trans "products_products_image" %}</th>
+                    <th>{% trans "products_products_name" %}</th>
+                    <th>{% trans "products_category" %}</th>
+                    <th>{% trans "products_creator" %}</th>
+                    <th>{% trans "products_creation_date" %}</th>
+                    <th>{% trans "products_is_active" %}</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="products_table_tbody">
+                {% if manage_products %}
+                {% for product in manage_products %}
+                <tr>
+                    <td>
+                        <img src="{{ media_url }}{{ product.image }}" alt="{{ product.name }}">
+                    </td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.category }}</td>
+                    <td>{{ product.creator }}</td>
+                    <td>{{ product.date_created }}</td>
+                    <td>
+                        <section class="products_checked">{% if product.is_active %}{% include "svg/check_circle.svg" %}{% else %}{% include "svg/no_check_circle.svg" %}{% endif %}</section>
+                    </td>
+                    <td>
+                        <form class="manage_products_form_tools" action="{% url 'manager:menu_products' %}" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="manage_product_product_id" value="{{ product.id }}">
+                            <button type="submit" name="manage_product_edit" class="manage_products_buttons">{% include "svg/edit.svg" %}</button>
+                            <button type="submit" name="manage_product_delete_product" class="manage_products_buttons">{% include "svg/delete.svg" %}</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% else %}
+                <tr class="manage-no-products">
+                    <td  colspan="6">{% trans "no_products" %}</td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+        <form action="{% url 'manager:menu_products' %}" method="post" class="manage-add-product">
+            {% csrf_token %}
+            <section class="button_manage_products_menu">
+                <button type="submit" name="manage_products_add_product" class="manage_products_buttons manage_products_buttons_add">{% include "svg/add.svg" %}</button>
+            </section>
+        </form>
+    </section>
+</div>
+{% endblock manage_content %}

@@ -1,0 +1,12 @@
+{% extends "home/base.html" %}
+{% load static i18n %}
+{% block content %}
+<div class="reservation-error-container">
+    <h2 class="reservation-error-tittle">{% trans "reservation-error-tittle" %}</h1>
+    <p class="reservation-error-messange">{% trans "reservation-error-messange" %}</p>
+    <section class="reservation-error-buttons">
+        <a href="{% url 'reservation' %}" class="reservation-error-back-link">{% trans "reservation-error-back-link" %}</a>
+        <a href="{% url 'home' %}" class="reservation-error-home-link">{% trans "reservation-error-home-link" %}</a>
+    </section>
+</div>
+{% endblock %}

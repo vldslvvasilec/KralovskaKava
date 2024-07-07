@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static i18n %}
+    <title>{{ global_title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/index.min.css' %}" />
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
+</head>
+<body>
+    <div id="scroll-to-top">
+        <svg id="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"/></svg>
+    </div>
+    <header class="header">
+    </header>
+    <div class="container_main_manage">
+    <nav class="navbar_wrap_manage">
+        <section class="navbar_manage">
+            <section class="navbar_wrap_header">
+                <section class="manager_header_user_info_wrap">
+                    <section class="manager_header_user_info">
+                        <section class="manager_header_user_info_foto">
+                            {% include "svg/user_info.svg" %}
+                        </section>
+                        <section class="manager_header_user_info_context">
+                            <p class="manager_header_user_info_context_login">{{ user.username }}</p>
+                            <p class="manager_header_user_info_context_position">{{ user.type_user }}</p>
+                            <p class="manager_header_user_info_context_full_name">
+                                <span>{{ user.first_name }}</span>
+                                <span>{{ user.last_name }}</span>
+                            </p>
+                        </section>
+                    </section>
+                    <p class="manager_header_user_info_context_email">{{ user.email }}</p>
+                </section>
+                <section class="navbar_manage_menu_wrap">
+                    <ul class="navbar_manage_menu">
+                        <li class="navbar_manage_items">
+                            <a class="navbar_manage_items_a" href="{% url 'manager:menu_restaurants' %}" >
+                                {% include "svg/manager_restaurants.svg" %}
+                                <span class="navbar_manage_items_a_span">{% trans "manager_menu_restaurants" %}</span></a>
+                        </li>
+                        <li class="navbar_manage_items">
+                            <a class="navbar_manage_items_a" href="{% url 'manager:menu_categories' %}" >
+                                {% include "svg/manager_category.svg" %}
+                                <span class="navbar_manage_items_a_span">{% trans "manager_menu_categiries" %}</span></a>
+                        </li>
+                        <li class="navbar_manage_items">
+                            <a class="navbar_manage_items_a" href="{% url 'manager:menu_products' %}" >
+                                {% include "svg/manager_products.svg" %}
+                                <span class="navbar_manage_items_a_span">{% trans "manager_menu_products" %}</span></a>
+                        </li>
+                        {% if user.is_authenticated and user.type_user == 'supermanager' %}
+                        <li class="navbar_manage_items">
+                            <a class="navbar_manage_items_a" href="{% url 'manager:menu_managers' %}" >
+                                {% include "svg/manager_managers.svg" %}
+                                <span class="navbar_manage_items_a_span">{% trans "manager_menu_managers" %}</span></a>
+                        </li>
+                        {% endif %}
+                        <li class="navbar_manage_items">
+                            <a class="navbar_manage_items_a" href="{% url 'manager:menu_reservations' %}" >
+                                {% include "svg/manager_reservations.svg" %}
+                                <span class="navbar_manage_items_a_span">{% trans "manager_menu_reservations" %}</span></a>
+                        </li>
+                        <li class="navbar_manage_items">
+                            <a class="navbar_manage_items_a" href="{% url 'manager:menu_comments' %}" >
+                                {% include "svg/manager_comments.svg" %}
+                                <span class="navbar_manage_items_a_span">{% trans "manager_menu_comments" %}</span></a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="navbar_exit_manage_wrap">
+                <a class="exit_manage" href="{% url 'manager:logout_manager' %}">
+                    {% include "svg/manager_logout.svg" %}
+                    <span>{% trans "manager_menu_exit" %}</span>
+                </a>
+            </section>
+        </section>
+    </nav> 
+    <main class="main main-manage">
+        {% block manage_content %}
+        {% endblock manage_content %}
+    </main>
+</div>
+<script src="{% static 'js/manager.js' %}"></script>
+</body>
+</html>

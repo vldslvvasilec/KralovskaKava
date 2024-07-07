@@ -1,0 +1,728 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-07 18:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: Kralovska_Kava/settings.py:131
+msgid "English"
+msgstr "Англійська"
+
+#: Kralovska_Kava/settings.py:132
+msgid "Russian"
+msgstr "Російська"
+
+#: Kralovska_Kava/settings.py:133
+msgid "Czech"
+msgstr "Чеська"
+
+#: Kralovska_Kava/settings.py:134
+msgid "Ukrainian"
+msgstr "Українська"
+
+#: home/views.py:118
+msgid "Thank you for your review"
+msgstr "Дякуємо за ваш відгук"
+
+#: home/views.py:121
+msgid "Please fill out all fields"
+msgstr "Будь ласка, заповніть всі поля"
+
+#: manager/forms.py:13
+msgid "Enter your login"
+msgstr "Введіть ваш логін"
+
+#: manager/forms.py:14
+msgid "Login"
+msgstr "Логін"
+
+#: manager/forms.py:17
+msgid "Enter your password"
+msgstr "Введіть ваш пароль"
+
+#: manager/forms.py:18
+msgid "Password"
+msgstr "Пароль"
+
+#: manager/forms.py:24
+msgid "The user with this login does not exist"
+msgstr "Користувач з таким логіном не існує."
+
+#: manager/forms.py:35 manager/views.py:54
+msgid "Invalid username or password"
+msgstr "Невірне ім'я користувача або пароль."
+
+#: manager/views.py:35
+msgid "manage-loging-tittle"
+msgstr "Вхід менеджера"
+
+#: manager/views.py:51
+msgid "You are not a manager or supermanager"
+msgstr "Ви не є менеджером або суперменеджером."
+
+#: manager/views.py:62
+msgid "admin_panel"
+msgstr "Адмін панель"
+
+#: manager/views.py:68
+msgid "You are not authorized to view this page"
+msgstr "Ви не маєте права переглядати цю сторінку"
+
+#: manager/views.py:72
+msgid "edit_restaurace_tittle"
+msgstr "Управління ресторанами"
+
+#: manager/views.py:93
+msgid "add_restaurace_tittle"
+msgstr "Додавання ресторану"
+
+#: manager/views.py:104
+msgid "editing_restaurace_tittle"
+msgstr "Управління рестораном"
+
+#: manager/views.py:119
+#, python-brace-format
+msgid "restaurant {restaurant_name_del} was successfully deleted."
+msgstr "Ресторан {restaurant_name_del} успішно видалено."
+
+#: manager/views.py:121
+msgid "No restaurant selected for deletion."
+msgstr "Не вибрано ресторан для видалення."
+
+#: manager/views.py:131
+msgid "edit_category_tittle"
+msgstr "Управління категоріями"
+
+#: manager/views.py:151
+msgid "add_category_tittle"
+msgstr "Додавання категорії"
+
+#: manager/views.py:163
+msgid "editing_category_tittle"
+msgstr "Управління категорією"
+
+#: manager/views.py:182
+#, python-brace-format
+msgid "category {category_name_del} was successfully deleted."
+msgstr "Категорію {category_name_del} успішно видалено."
+
+#: manager/views.py:184
+msgid "No category selected for deletion."
+msgstr "Не вибрано категорію для видалення."
+
+#: manager/views.py:194
+msgid "edit_products_tittle"
+msgstr "Управління продуктами"
+
+#: manager/views.py:213
+msgid "add_product_tittle"
+msgstr "Додавання продукту"
+
+#: manager/views.py:228
+msgid "editing_product_tittle"
+msgstr "Управління продуктом"
+
+#: manager/views.py:250
+#, python-brace-format
+msgid "product {product_name_del} was successfully deleted."
+msgstr "Продукт {product_name_del} успішно видалено."
+
+#: manager/views.py:252
+msgid "No product selected for deletion."
+msgstr "Не вибрано продукт для видалення."
+
+#: manager/views.py:261
+msgid "edit_managers_tittle"
+msgstr "Управління менеджерами"
+
+#: manager/views.py:282
+msgid "add_manager_tittle"
+msgstr "Додавання менеджера"
+
+#: manager/views.py:295
+msgid "editing_manager_tittle"
+msgstr "Управління менеджером"
+
+#: manager/views.py:312
+#, python-brace-format
+msgid "manager {manager_name_del} was successfully deleted."
+msgstr "Менеджер {manager_name_del} був успішно видалений."
+
+#: manager/views.py:314
+msgid "No managers selected for deletion."
+msgstr "Не вибрано жодного менеджера для видалення."
+
+#: manager/views.py:324
+msgid "edit_reservations_tittle"
+msgstr "Управління резерваціями"
+
+#: manager/views.py:348
+#, python-brace-format
+msgid "Reservation for {reservation_name_del} was successfully deleted."
+msgstr "Резервація для {reservation_name_del} була успішно видалена."
+
+#: manager/views.py:350
+msgid "No reservation selected for deletion."
+msgstr "Не вибрано жодної резервації для видалення."
+
+#: manager/views.py:358
+msgid "edit_reviews_tittle"
+msgstr "Управління коментарями"
+
+#: manager/views.py:382
+#, python-brace-format
+msgid "Comment for {review_name_del} was successfully deleted."
+msgstr "Коментар від {review_name_del} успішно видалено."
+
+#: manager/views.py:384
+msgid "No Comments selected for deletion."
+msgstr "Не вибрано жодного коментаря для видалення."
+
+#: send_email.py:33
+msgid "Successful Reservation"
+msgstr "Успішне бронювання"
+
+msgid ""
+"Dear {user_name},\n\n"
+"Your reservation at Kralovska Kava {restaurant_name} has been successfully made.\n"
+"Date: {reservation_date}\n"
+"Time: {reservation_time}\n\n"
+"Thank you for choosing our restaurant!\n\n"
+"Best regards,\n"
+"The Kralovska Kava {restaurant_name} Team"
+msgstr ""
+"Шановний {user_name},\n\n"
+"Ваше бронювання в ресторані Kralovska Kava {restaurant_name} було успішно здійснено.\n"
+"Дата: {reservation_date}\n"
+"Час: {reservation_time}\n\n"
+"Дякуємо, що обрали наш ресторан!\n\n"
+"З повагою,\n"
+"Команда ресторану Kralovska Kava {restaurant_name}."
+
+
+#: templates/home/about_as.html:5 templates/home/about_as.html:26
+msgid "slide-tittle-prague"
+msgstr "Кав’ярня у Празі"
+
+#: templates/home/about_as.html:8 templates/home/about_as.html:29
+msgid "slide-content-prague"
+msgstr ""
+"Ласкаво просимо до Krarovska Kava — затишного місця в самому серці Праги, де "
+"кожен може насолодитися найкращою кавою в місті. Ми ретельно підбираємо "
+"зерна від перевірених постачальників, щоб кожна чашка приносила справжнє "
+"задоволення. Наші бариста — справжні майстри своєї справи, які не лише "
+"приготують вам ідеальне еспресо, але й розкажуть про тонкощі кавового "
+"мистецтва. Завітайте до нас, щоб відчути атмосферу затишку та насолодитися "
+"ароматною кавою у самому центрі Праги."
+
+#: templates/home/about_as.html:12
+msgid "slide-tittle-liberc"
+msgstr "Кав’ярня у Ліберці"
+
+#: templates/home/about_as.html:15
+msgid "slide-content-liberc"
+msgstr ""
+"У Ліберці Krarovska Kava стала справжнім місцем притягання для всіх "
+"любителів кави. Тут кожен знайде щось на свій смак — від традиційного "
+"еспресо до оригінальних кавових коктейлів. Ми прагнемо створити атмосферу, в "
+"якій ви зможете розслабитися, попрацювати або зустрітися з друзями. Наші "
+"бариста постійно вдосконалюють свої навички, щоб кожна чашка кави радувала "
+"вас своїм смаком та ароматом. Завітайте до нас у Ліберці та дозвольте нам "
+"подарувати вам незабутні моменти з чашкою відмінної кави."
+
+#: templates/home/about_as.html:19
+msgid "slide-tittle-brno"
+msgstr "Кав’ярня у Брно"
+
+#: templates/home/about_as.html:22
+msgid "slide-content-brno"
+msgstr ""
+"У нашій кав’ярні Krarovska Kava у Брно ви знайдете куточок затишку та "
+"комфорту, де можна відпочити від суєти великого міста. Тут ми створюємо не "
+"просто каву, а справжні витвори мистецтва, які заряджають енергією та "
+"надихають на нові досягнення. Ми пишаємося якістю наших напоїв та турботою "
+"про кожного клієнта. Наші бариста завжди готові запропонувати вам щось "
+"особливе, будь то класичне капучино чи авторський напій. Завітайте до нас у "
+"Брно, щоб відчути справжній смак якісної кави та насолодитися приємною "
+"атмосферою."
+
+#: templates/home/about_as.html:34
+msgid "slide-content-post-text"
+msgstr ""
+"Ми чекаємо на вас у наших кав’ярнях Krarovska Kava у Празі, Брно та Ліберці, "
+"щоб подарувати вам найприємніші та найсмачніші враження!"
+
+#: templates/home/base.html:33
+msgid "aboutUs"
+msgstr "Про нас"
+
+#: templates/home/base.html:35
+msgid "menu"
+msgstr "Меню"
+
+#: templates/home/base.html:48
+msgid "reservation"
+msgstr "Бронювання"
+
+#: templates/home/product_detail.html:7
+msgid "back-home-category"
+msgstr "Назад"
+
+#: templates/home/product_detail.html:19
+msgid "components"
+msgstr "Склад напою"
+
+#: templates/home/reviews.html:3
+msgid "home_reviews_tittle"
+msgstr "Коментарі"
+
+#: templates/home/reviews.html:6
+msgid "form_add_comment_tittle"
+msgstr "Залиште коментар"
+
+#: templates/home/reviews.html:15
+msgid "home_reviews_name"
+msgstr "Ваше ім'я"
+
+#: templates/home/reviews.html:16
+msgid "form_add_comment_enter_name"
+msgstr "Введіть ім'я"
+
+#: templates/home/reviews.html:19
+msgid "home_reviews_comment"
+msgstr "Ваш коментар"
+
+#: templates/home/reviews.html:20
+msgid "form_add_comment_enter_comment"
+msgstr "Введіть текст"
+
+#: templates/home/reviews.html:23
+msgid "home_reviews_submit"
+msgstr "Відправити"
+
+#: templates/manager/base.html:45
+msgid "manager_menu_restaurants"
+msgstr "Ресторани"
+
+#: templates/manager/base.html:50
+msgid "manager_menu_categiries"
+msgstr "Категорії"
+
+#: templates/manager/base.html:55
+msgid "manager_menu_products"
+msgstr "Продукти"
+
+#: templates/manager/base.html:61
+msgid "manager_menu_managers"
+msgstr "Менеджери"
+
+#: templates/manager/base.html:67
+msgid "manager_menu_reservations"
+msgstr "Бронювання"
+
+#: templates/manager/base.html:72
+msgid "manager_menu_comments"
+msgstr "Коментарі"
+
+#: templates/manager/base.html:80
+msgid "manager_menu_exit"
+msgstr "Вийти"
+
+#: templates/manager/details/category_details.html:11
+#: templates/manager/details/managers_details.html:11
+#: templates/manager/details/product_details.html:11
+#: templates/manager/details/restaurace_details.html:11
+msgid "Back"
+msgstr "Назад"
+
+#: templates/manager/details/category_details.html:17
+#: templates/manager/details/edit_category.html:16
+msgid "category_category_name"
+msgstr "Назва"
+
+#: templates/manager/details/category_details.html:30
+msgid "category_category_active"
+msgstr "Активність"
+
+#: templates/manager/details/category_details.html:35
+#: templates/manager/details/managers_details.html:85
+#: templates/manager/details/product_details.html:66
+#: templates/manager/details/restaurace_details.html:65
+msgid "Save"
+msgstr "Зберегти"
+
+#: templates/manager/details/edit_category.html:5
+msgid "category_management"
+msgstr "Управління категоріями"
+
+#: templates/manager/details/edit_category.html:11
+msgid "сurrent_сategories"
+msgstr "Поточні категорії"
+
+#: templates/manager/details/edit_category.html:17
+msgid "category_product_quantity"
+msgstr "Кількість товарів"
+
+#: templates/manager/details/edit_category.html:18
+msgid "category_creator"
+msgstr "Автор"
+
+#: templates/manager/details/edit_category.html:19
+msgid "category_creation_date"
+msgstr "Дата створення"
+
+#: templates/manager/details/edit_category.html:20
+msgid "category_is_active"
+msgstr "Активність"
+
+#: templates/manager/details/edit_category.html:45
+msgid "no_categories"
+msgstr "Немає категорій"
+
+#: templates/manager/details/edit_managers.html:5
+msgid "managers_management"
+msgstr "Управління менеджерами"
+
+#: templates/manager/details/edit_managers.html:11
+msgid "сurrent_rmanagers"
+msgstr "Наші менеджери"
+
+#: templates/manager/details/edit_managers.html:16
+#: templates/manager/details/managers_details.html:16
+msgid "managers_manager_name"
+msgstr "Логін"
+
+#: templates/manager/details/edit_managers.html:17
+#: templates/manager/details/managers_details.html:25
+msgid "managers_manager_first_name"
+msgstr "Ім'я"
+
+#: templates/manager/details/edit_managers.html:18
+msgid "managers_maneger_last_name"
+msgstr "Прізвище"
+
+#: templates/manager/details/edit_managers.html:19
+#: templates/manager/details/managers_details.html:52
+msgid "managers_manager_type_user"
+msgstr "Тип"
+
+#: templates/manager/details/edit_managers.html:20
+msgid "managers_manager_product_count"
+msgstr "Кількість продуктів"
+
+#: templates/manager/details/edit_managers.html:21
+msgid "managers_is_active"
+msgstr "Активність"
+
+#: templates/manager/details/edit_managers.html:47
+msgid "no_managers"
+msgstr "Немає менеджерів"
+
+#: templates/manager/details/edit_product.html:5
+msgid "products_management"
+msgstr "Управління продуктами"
+
+#: templates/manager/details/edit_product.html:11
+msgid "сurrent_products"
+msgstr "Поточні продукти"
+
+#: templates/manager/details/edit_product.html:16
+#: templates/manager/details/product_details.html:48
+msgid "products_products_image"
+msgstr "Зображення"
+
+#: templates/manager/details/edit_product.html:17
+#: templates/manager/details/product_details.html:19
+msgid "products_products_name"
+msgstr "Назва"
+
+#: templates/manager/details/edit_product.html:18
+msgid "products_category"
+msgstr "Категорія"
+
+#: templates/manager/details/edit_product.html:19
+msgid "products_creator"
+msgstr "Автор"
+
+#: templates/manager/details/edit_product.html:20
+msgid "products_creation_date"
+msgstr "Дата створення"
+
+#: templates/manager/details/edit_product.html:21
+msgid "products_is_active"
+msgstr "Активність"
+
+#: templates/manager/details/edit_product.html:51
+msgid "no_products"
+msgstr "Немає продуктів"
+
+#: templates/manager/details/edit_reservace.html:5
+msgid "reservations_management"
+msgstr "Управління резерваціями"
+
+#: templates/manager/details/edit_reservace.html:11
+msgid "сurrent_reservations"
+msgstr "Актуальні резервації"
+
+#: templates/manager/details/edit_reservace.html:16
+msgid "reservations_reservation_restaurant"
+msgstr "Ресторан"
+
+#: templates/manager/details/edit_reservace.html:17
+msgid "reservations_reservation_name"
+msgstr "Ім'я"
+
+#: templates/manager/details/edit_reservace.html:18
+msgid "reservations_reservation_email"
+msgstr "Емейл"
+
+#: templates/manager/details/edit_reservace.html:19
+msgid "reservations_reservation_date_create"
+msgstr "Дата створення"
+
+#: templates/manager/details/edit_reservace.html:20
+msgid "reservations_reservation_date"
+msgstr "Дата"
+
+#: templates/manager/details/edit_reservace.html:21
+msgid "reservations_reservation_time"
+msgstr "Час"
+
+#: templates/manager/details/edit_reservace.html:22
+msgid "reservations_is_active"
+msgstr "Активність"
+
+#: templates/manager/details/edit_reservace.html:48
+msgid "no_reservations"
+msgstr "Немає бронювань"
+
+#: templates/manager/details/edit_restaurace.html:5
+msgid "restaurant_management"
+msgstr "Управління ресторанами"
+
+#: templates/manager/details/edit_restaurace.html:11
+msgid "сurrent_restaurants"
+msgstr "Поточні ресторани"
+
+#: templates/manager/details/edit_restaurace.html:16
+#: templates/manager/details/restaurace_details.html:16
+msgid "restaurant_restaurant_name"
+msgstr "Назва"
+
+#: templates/manager/details/edit_restaurace.html:17
+#: templates/manager/details/restaurace_details.html:25
+msgid "restaurant_tables_quantity"
+msgstr "Кількість столів"
+
+#: templates/manager/details/edit_restaurace.html:18
+msgid "restaurant_reservations_quantity"
+msgstr "Кількість бронювань"
+
+#: templates/manager/details/edit_restaurace.html:19
+#: templates/manager/details/restaurace_details.html:55
+msgid "restaurant_creator"
+msgstr "Автор"
+
+#: templates/manager/details/edit_restaurace.html:20
+msgid "restaurant_creation_date"
+msgstr "Дата створення"
+
+#: templates/manager/details/edit_restaurace.html:21
+msgid "restaurant_is_active"
+msgstr "Активність"
+
+#: templates/manager/details/edit_restaurace.html:47
+msgid "no_restaurants"
+msgstr "Немає ресторанів"
+
+#: templates/manager/details/edit_reviews.html:5
+msgid "reviews_management"
+msgstr "Управління коментарями"
+
+#: templates/manager/details/edit_reviews.html:11
+msgid "сurrent_reviews"
+msgstr "Актуальні коментарі"
+
+#: templates/manager/details/edit_reviews.html:16
+msgid "reviews_name"
+msgstr "Ім'я"
+
+#: templates/manager/details/edit_reviews.html:17
+msgid "reviews_comment"
+msgstr "Коментар"
+
+#: templates/manager/details/edit_reviews.html:18
+msgid "reviews_date"
+msgstr "Дата створення"
+
+#: templates/manager/details/edit_reviews.html:40
+msgid "no_reviews"
+msgstr "Немає коментарів"
+
+#: templates/manager/details/managers_details.html:34
+msgid "managers_manager_last_name"
+msgstr "Прізвище"
+
+#: templates/manager/details/managers_details.html:43
+msgid "managers_manager_email"
+msgstr "Електронна пошта"
+
+#: templates/manager/details/managers_details.html:59
+msgid "managers_manager_password"
+msgstr "Пароль"
+
+#: templates/manager/details/managers_details.html:72
+msgid "manager_product_count"
+msgstr "Кількість створених продуктів"
+
+#: templates/manager/details/managers_details.html:73
+msgid "manager_date_joined"
+msgstr "Дата створення"
+
+#: templates/manager/details/managers_details.html:74
+msgid "manager_last_login"
+msgstr "Останній вхід"
+
+#: templates/manager/details/managers_details.html:79
+msgid "manager_manager_active"
+msgstr "Активність"
+
+#: templates/manager/details/product_details.html:28
+msgid "products_products_description"
+msgstr "Опис"
+
+#: templates/manager/details/product_details.html:37
+msgid "products_products_components"
+msgstr "Компоненти"
+
+#: templates/manager/details/product_details.html:53
+msgid "products_products_category"
+msgstr "Категорія"
+
+#: templates/manager/details/product_details.html:61
+msgid "products_products_active"
+msgstr "Активність"
+
+#: templates/manager/details/restaurace_details.html:34
+msgid "restaurant_open"
+msgstr "Відкриття"
+
+#: templates/manager/details/restaurace_details.html:43
+msgid "restaurant_close"
+msgstr "Закриття"
+
+#: templates/manager/details/restaurace_details.html:54
+msgid "restaurant_reservation_count"
+msgstr "Кількість бронювань"
+
+#: templates/manager/details/restaurace_details.html:56
+msgid "restaurant_date_create"
+msgstr "Дата створення"
+
+#: templates/manager/details/restaurace_details.html:60
+msgid "restaurant_restaurant_active"
+msgstr "Активність"
+
+#: templates/manager/loging_manage.html:28
+msgid "manage-login-submit"
+msgstr "Увійти"
+
+#: templates/reservation/reservation.html:7
+msgid "reservation-title"
+msgstr "Резервування столика"
+
+#: templates/reservation/reservation.html:10
+#: templates/reservation/reservation.html:25
+msgid "reservation-date"
+msgstr "Виберіть дату"
+
+#: templates/reservation/reservation.html:15
+msgid "reservation-restaurant"
+msgstr "Виберіть ресторан"
+
+#: templates/reservation/reservation.html:23
+#: templates/reservation/reservation.html:48
+msgid "reservation-time"
+msgstr "Виберіть час"
+
+#: templates/reservation/reservation.html:30
+msgid "reservation-name"
+msgstr "Ваше ім'я"
+
+#: templates/reservation/reservation.html:31
+msgid "reservation-enter-name"
+msgstr "Введіть ваше ім'я"
+
+#: templates/reservation/reservation.html:34
+msgid "reservation-email"
+msgstr "Email"
+
+#: templates/reservation/reservation.html:38
+msgid "reservation-book"
+msgstr "Забронювати"
+
+#: templates/reservation/reservation.html:47
+msgid "Choose-another-date"
+msgstr "Виберіть іншу дату"
+
+#: templates/reservation/reservation_error.html:5
+msgid "reservation-error-tittle"
+msgstr "Помилка бронювання"
+
+#: templates/reservation/reservation_error.html:6
+msgid "reservation-error-messange"
+msgstr ""
+"Нажаль, сталася помилка при обробці вашого бронювання. Будь ласка, спробуйте "
+"пізніше."
+
+#: templates/reservation/reservation_error.html:8
+msgid "reservation-error-back-link"
+msgstr "Спробувати ще раз"
+
+#: templates/reservation/reservation_error.html:9
+msgid "reservation-error-home-link"
+msgstr "Повернутися на головну сторінку"
+
+#: templates/reservation/reservation_success.html:5
+msgid "reservation-success-tittle"
+msgstr "Бронювання успішне!"
+
+#: templates/reservation/reservation_success.html:6
+msgid "reservation-success-messange"
+msgstr "Ваше бронювання успішно підтверджено."
+
+#: templates/reservation/reservation_success.html:9
+msgid "reservation-success-restaurant"
+msgstr "Ресторан: "
+
+#: templates/reservation/reservation_success.html:13
+msgid "reservation-success-name"
+msgstr "Ім'я: "
+
+#: templates/reservation/reservation_success.html:17
+msgid "reservation-success-date"
+msgstr "Дата: "
+
+#: templates/reservation/reservation_success.html:21
+msgid "reservation-success-time"
+msgstr "Час: "
+
+#: templates/reservation/reservation_success.html:25
+msgid "reservation-success-home-link"
+msgstr "Повернутися на головну сторінку"
+
+#~ msgid "manager_menu_settings"
+#~ msgstr "Налаштування"

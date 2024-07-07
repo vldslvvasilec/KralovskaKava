@@ -1,0 +1,26 @@
+{% extends 'home/base.html' %}
+{% block content %}
+{% load i18n %}
+<div class="product-details-page">
+    <section class="product-details-page-content">
+        <a class="back-home-page-to-category" href="{% url 'home' %}#category{{ object.category.id }}">
+            {% trans "back-home-category" %}
+        </a>
+        <p class="product-details-category-name">{{ object.category.name }}</p>
+        <section class="product-detail">
+            <section class="product-detail-content">
+                <section class="product-detail-content-image" style="background: {{ object.category.background_css }}">
+                    <img class="product-detail-content-img" src="{{ image_url }}" alt="{{ object.name }}">
+                </section>
+                <section class="product-detail-content-details">
+                    <h2 class="product-detail-content-detail-name">{{ object.name }}</h2>
+                    <p class="product-detail-content-detail-description">{{ object.description }}</p>
+                    <h3 class="product-detail-content-detail-components-title">
+                        {% trans "components" %}
+                    </h3>
+                    <p class="product-detail-content-detail-components">{{ object.components }}</p>
+                </section>
+        </section>
+    </section>
+</div>
+{% endblock %}

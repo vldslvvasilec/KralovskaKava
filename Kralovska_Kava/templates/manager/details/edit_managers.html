@@ -1,0 +1,60 @@
+{% extends "manager/base.html" %}
+{% load i18n %}
+{% block manage_content %}
+<div class="manage_managers">
+    <h2 class="title_manage_managers">{% trans "managers_management" %}</h2>
+    {% if manage_managers_error_message %}
+    <div class="error_message">
+        {{ manage_managers_error_message }}
+    </div>
+    {% endif %}
+    <h3 class="actual_managers">{% trans "сurrent_rmanagers" %}</h3>
+    <section class="manage_managers_forms">
+        <table class="managers_table">
+            <thead class="managers_table_thead">
+                <tr>
+                    <th>{% trans "managers_manager_name" %}</th>
+                    <th>{% trans "managers_manager_first_name" %}</th>
+                    <th>{% trans "managers_maneger_last_name" %}</th>
+                    <th>{% trans "managers_manager_type_user" %}</th>
+                    <th>{% trans "managers_manager_product_count" %}</th>
+                    <th>{% trans "managers_is_active" %}</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="managers_table_tbody">
+                {% if manage_managers_managers %}
+                {% for manager in manage_managers_managers %}
+                <tr>
+                    <td>{{ manager.username }}</td>
+                    <td>{{ manager.first_name }}</td>
+                    <td>{{ manager.last_name }}</td>
+                    <td>{{ manager.type_user }}</td>
+                    <td>{{ manager.product_count }}</td>
+                    <td><section class="managers_checked">{% if manager.is_active %}{% include "svg/check_circle.svg" %}{% else %}{% include "svg/no_check_circle.svg" %}{% endif %}</section></td>
+                    <td>
+                        <form class="manage_managers_form_tools" action="{% url 'manager:menu_managers' %}" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="manage_managers_manager_id" value="{{ manager.id }}">
+                            <button type="submit" name="manage_managers_edit" class="manage_managers_buttons">{% include "svg/edit.svg" %}</button>
+                            <button type="submit" name="manage_managers_delete_manager" class="manage_managers_buttons">{% include "svg/delete.svg" %}</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% else %}
+                <tr class="manage-no-managers">
+                    <td  colspan="6">{% trans "no_managers" %}</td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+        <form action="{% url 'manager:menu_managers' %}" method="post" class="manage-add-manager">
+            {% csrf_token %}
+            <section class="button_manage_managers_menu">
+                <button type="submit" name="manage_managers_add_manager" class="manage_managers_buttons manage_manager_buttons_add">{% include "svg/add.svg" %}</button>
+            </section>
+        </form>
+    </section>
+</div>
+{% endblock manage_content %}

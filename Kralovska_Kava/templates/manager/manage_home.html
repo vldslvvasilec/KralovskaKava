@@ -1,0 +1,12 @@
+{% extends "manager/base.html" %}
+{% block manage_content %}
+<div class="manage_content">
+    <p>Hello, {{ user.username }}!
+    <p>You type: {{ user.type_user }}</p>
+    <p>You name: {{ user.first_name }}</p>
+    <p>{{ user.last_name }}</p>
+    <p>{{ user.email }}</p>
+    <p>{{ user.date_joined }}</p>
+    <p>{{ user.last_login }}</p>
+</div>
+{% endblock manage_content %}

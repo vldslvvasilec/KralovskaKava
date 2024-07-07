@@ -1,0 +1,58 @@
+{% extends "manager/base.html" %}
+{% load i18n %}
+{% block manage_content %}
+<div class="manage_category">
+    <h2 class="title_manage_category">{% trans "category_management" %}</h2>
+    {% if manage_category_error_message %}
+    <div class="error_message">
+        {{ manage_category_error_message }}
+    </div>
+    {% endif %}
+    <h3 class="actual_category">{% trans "сurrent_сategories" %}</h3>
+    <section class="manage_category_forms">
+        <table class="category_table">
+            <thead class="category_table_thead">
+                <tr>
+                    <th>{% trans "category_category_name" %}</th>
+                    <th>{% trans "category_product_quantity" %}</th>
+                    <th>{% trans "category_creator" %}</th>
+                    <th>{% trans "category_creation_date" %}</th>
+                    <th>{% trans "category_is_active" %}</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="category_table_tbody">
+                {% if manage_category_categories %}
+                {% for category in manage_category_categories %}
+                <tr>
+                    <td>{{ category.name }}</td>
+                    <td>{{ category.product_count }}</td>
+                    <td>{{ category.creator }}</td>
+                    <td>{{ category.date_created }}</td>
+                    <td><section class="category_checked">{% if category.is_active %}{% include "svg/check_circle.svg" %}{% else %}{% include "svg/no_check_circle.svg" %}{% endif %}</section></td>
+                    <td>
+                        <form class="manage_category_form_tools" action="{% url 'manager:menu_categories' %}" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="manage_category_category_id" value="{{ category.id }}">
+                            <button type="submit" name="manage_category_edit" class="manage_category_buttons">{% include "svg/edit.svg" %}</button>
+                            <button type="submit" name="manage_category_delete_category" class="manage_category_buttons">{% include "svg/delete.svg" %}</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% else %}
+                <tr class="manage-no-category">
+                    <td  colspan="6">{% trans "no_categories" %}</td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+        <form action="{% url 'manager:menu_categories' %}" method="post" class="manage-add-category">
+            {% csrf_token %}
+            <section class="button_manage_categories_menu">
+                <button type="submit" name="manage_category_add_category" class="manage_category_buttons manage_category_buttons_add">{% include "svg/add.svg" %}</button>
+            </section>
+        </form>
+    </section>
+</div>
+{% endblock manage_content %}
