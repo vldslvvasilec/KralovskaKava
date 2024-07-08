@@ -24,3 +24,5 @@ env/
 
 # Google Cloud Platform service account key
 *.json
+/kralovKava/
+/.venv/
