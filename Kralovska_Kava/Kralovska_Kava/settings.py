@@ -1,9 +1,7 @@
 import os
-from pathlib import Path
 from google.oauth2 import service_account
 from django.utils.translation import gettext_lazy as _ 
 from dotenv import load_dotenv
-import socket
 
 # Load environment variables from .env file
 load_dotenv()
@@ -22,9 +20,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-hostname = socket.gethostname()
-local_ip = socket.gethostbyname(hostname)
-ALLOWED_HOSTS = ['35.208.49.205', local_ip, '10.128.0.2', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['35.208.49.205', ]
 
 
 # Application definition
