@@ -16,9 +16,11 @@ google-cloud-storage==2.17.0
 google-crc32c==1.5.0
 google-resumable-media==2.7.1
 googleapis-common-protos==1.63.1
+gunicorn==22.0.0
 httplib2==0.22.0
 idna==3.7
 oauthlib==3.2.2
+packaging==24.1
 pillow==10.3.0
 proto-plus==1.23.0
 protobuf==4.25.3
@@ -26,6 +28,7 @@ psycopg2-binary==2.9.9
 pyasn1==0.6.0
 pyasn1_modules==0.4.0
 pyparsing==3.1.2
+python-dotenv==1.0.1
 requests==2.32.3
 requests-oauthlib==2.0.0
 rsa==4.9

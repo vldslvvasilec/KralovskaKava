@@ -26,6 +26,13 @@ def send_reservation_email(user_email, user_name, restaurant_name, reservation_d
     smtp_user = os.getenv('SMPT_USER')
     smtp_password = os.getenv('SMPT_PASSWORD')
 
+    print(user_language)
+    print(user_name)
+    print(user_email)
+    print(restaurant_name)
+    print(reservation_date)
+    print(reservation_date)
+
     # Создание email сообщения
     msg = MIMEMultipart()
     msg['From'] = smtp_user
@@ -54,3 +61,4 @@ def send_reservation_email(user_email, user_name, restaurant_name, reservation_d
     server.login(smtp_user, smtp_password)
     server.send_message(msg)
     server.quit()
+

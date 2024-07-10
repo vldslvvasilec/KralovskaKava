@@ -124,6 +124,7 @@ def makeReservationView(request):
             print(email)
             print(date)
             print(time)
+            print(lang)
             send_reservation_email(
                 user_email=email,
                 user_name=name,
