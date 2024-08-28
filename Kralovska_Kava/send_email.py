@@ -62,3 +62,4 @@ def send_reservation_email(user_email, user_name, restaurant_name, reservation_d
     server.send_message(msg)
     server.quit()
 
+
